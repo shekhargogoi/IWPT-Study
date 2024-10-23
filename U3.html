@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UNIT:3 </title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Unit:3</title>
+</head>
+<body>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="Chapter.html">UNITS</a>
+    </nav>
+    <h2 align="center">UNIT:3</h2>
+    <h1 align="center">HTML</h1>
+    <div class="wrapper">
+        <div class="box">
+		<input checked="checked" id="box1" name="box" type="radio"> 
+		<label for="box1">   HTML     </label>
+		<div class="content">
+			<h3>INTRODUCTION TO HTML</h3>
+			<p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages.
+                 HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices. Along with graphics and scripting, 
+                HTML and CSS are the basis of building Web pages and Web Applications. 
+                <br>
+                <br>
+                Learn more below about: 
+             </p>
+<h3>What is HTML?</h3>
+			<p>HTML is the language for describing the structure of Web pages. HTML gives authors the means to:
+                <ul>
+                  <li>Publish online documents with headings, text, tables, lists, photos, etc.</li>
+                  <li>Retrieve online information via hypertext links, at the click of a button</li>
+                  <li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.</li>
+                  <li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.</li>
+                  <li>With HTML, authors describe the structure of pages using markup. The elements of the language label pieces of content such as “paragraph,” “list,” “table,” and so on.</li>
+       
+                 </ul> <br>
+                 <h4>A simple HTML Document</h4> <br>
+
+                 <div class="codebox">
+                   &lt;!DOCTYPE html&gt; <br>
+                   &lt;html&gt;<br>
+                   &lt;head&gt;<br>
+                   &lt;title>Page Title&lt;/title&gt;<br>
+                   &lt;/head&gt;<br>
+                   &lt;body&gt;<br>
+                   
+                   &lt;h1>My First Heading&lt;/h1&gt;<br>
+                   &lt;p>My first paragraph.&lt;/p&gt;<br>
+                   
+                   &lt;/body&gt;<br>
+                   &lt;/html&gt;<br><br>
+                 </div> <br>
+                 <button style="
+                 background-color: #4CAF50; /* Green */
+           border: none;
+           color: white;
+           padding: 15px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 16px; border-radius: 7px;" ><a style="color: whitesmoke; text-decoration: none;" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro">Try it Yourself</a></button> <br><br>
+                   Example Explained <br><br>
+         
+                   <ul>
+                     <li>The <span class="hilt">&lt;!DOCTYPE html&gt; </span> declaration defines that this document is an HTML5 document</li>
+                     <li>The <span class="hilt">&lt;html&gt; </span> element is the root element of an HTML page</li>
+                     <li>The <span class="hilt">&lt;head&gt; </span> element contains meta information about the HTML page</li>
+                     <li>The <span class="hilt">&lt;title&gt; </span>  element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+                     <li>The <span class="hilt">&lt;body&gt; </span>  element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                     
+                   </ul> <br><br>
+                  <h1 id="ele"> What is an HTML element ?</h1> <br><br>
+                  An HTML element is defined by a start tag, some content, and an end tag: <br><br>
+                  <span class="hilt">&lt;tagname&gt;</span>
+                  <span class="hilt"></span>Content goes here...<span class="hilt">&lt;/tagname&gt;</span> <br><br>
+                  The <b>HTML</b> element is everything from the start tag to the end tag: <br><br>
+         
+                  <h3><span class="hilt">&lt;h1&gt;</span>My First Heading <span class="hilt">&lt;/h1&gt;</span></h3>
+                 <br> <h3><span class="hilt">&lt;p&gt;</span>My First Paragraph<span class="hilt">&lt;p&gt;</span></h3> <br><br>
+                  
+             <h1>How it looks in Browers ?</h1> <br><br>
+             The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly. <br> A browser does not display the HTML tags, but uses them to determine how to display the document:
+             <br><br><img src="images/html1.jpg" style="position: relative; left: 20%;"><br><br>  
+             <H1 id="stct">HTML Page Structure</H1> <br><br>
+         Below is a visualization of an HTML page structure: <br>
+         <br><br><img src="images/html2.jpg" style="position: relative;"><br><br>  
+         
+         <h1 id="hist">History of HTML</h1><br><br>
+         Since the early days of the World Wide Web, there have been many versions of HTML: <br>
+         <br><br><img src="images/html3.jpg" style="position: relative;"><br><br>  
+                    
+		</div>
+		<input id="box2" name="box" type="radio"> 
+		<label for="box2"> HTML ELEMENTS </label>
+		<div class="content">
+			<h3>INTRODUCTION TO XML </h3>
+
+                         <p>
+                            An <b>HTML element </b> is defined by a starting tag. 
+                            If the element contains other content, it ends with a closing tag, where the element name is preceded by a forward slash as shown below with few tags −
+        <br>
+        <table>
+            <tr>
+              <th>Start Tag</th>
+              <th>Content</th>
+              <th>End Tag</th>
+            </tr>
+            <tr>
+              <td>&lt;p&gt;</td>
+              <td>This is Paragraph Content</td>
+              <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+              <td>&lt;h1&gt;</td>
+              <td>This is Heading Content</td>
+              <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+              <td>&lt;br&gt;</td>
+              <td>To get a new line</td>
+             </tr>  
+          </table> <br><br>
+          
+          So here &lt;p&gt;... &lt;/p &gt;is an HTML element,&lt;h1&gt;... &lt;/h1 &gt; is another <b>HTML</b> element. There are some <b>HTML</b>  elements which don't need to be closed, such as &lt;img.../&gt;, &lt;hr /&gt; and &lt;br /&gt; elements. These are known as void elements.
+
+          <!-- &lt; &gt; &lt;/ &gt; -->
+          HTML documents consists of a tree of these elements and they specify how HTML documents should be built, and what kind of content should be placed in what part of an HTML document. <br>
+
+          <h1>HTML Tag vs. Element</h1> 
+          An <b>HTML</b> element is defined by a starting tag. If the element contains other content, it ends with a closing tag.
+
+For example,<b>&lt;p&gt;</b> is starting tag of a paragraph and<b>&lt;/&gt; </b> is closing tag of the same paragraph but <b>&lt;p&gt;</b> This is paragraph <b>&lt;/&gt; </b> is a paragraph element. <br>
+<h1>Nested HTML Elements</h1>
+It is very much allowed to keep one HTML element inside another HTML element − <br><br> <b>Example : </b> <br><br>
+          <div class="codebox">
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt;<br> <br>
+            
+               &lt;head&gt;<br>
+               &lt;title&gt;Nested Elements Example&lt;/title&gt;<br>
+               &lt;/head&gt;<br> <br>
+                
+            &lt;body&gt;<br>
+            &lt;h1&gt;This is &lt;i&gt;italic&lt;/i&gt; heading&lt;/h1&gt;<br>
+            &lt;p&gt;This is &lt;u&gt;underlined&lt;/u&gt; paragraph&lt;/p&gt;<br>
+               &lt;/body&gt;<br>
+                
+            &lt;/html>
+          </div>
+      </div> 
+
+      <input id="box3" name="box" type="radio"> 
+      <label for="box3"> HTML-Attributes</label>
+      <div class="content">
+          <h1>HTML-Attributes</h1>
+          <br>
+        <p>We have seen few HTML tags and their usage like heading tags <b>&lt;h1&gt;, &lt;h2&gt;,</b> paragraph tag
+            <b>&lt;p&gt;</b> and other tags. We used them so far in their simplest form, but most of the HTML tags
+            can also have attributes, which are extra bits of information.</p>
+        <p>An attribute is used to define the characteristics of an HTML element and is placed inside the element's
+            opening tag. All attributes are made up of two parts &minus; a <b>name</b> and a <b>value</b></p>
+        <ul class="list">
+            <li>
+                <p>The <b>name</b> is the property you want to set. For example, the paragraph <b>&lt;p&gt;</b>
+                    element in the example carries an attribute whose name is <b>align</b>, which you can use to
+                    indicate the alignment of paragraph on the page.</p>
+            </li>
+            <li>
+                <p>The <b>value</b> is what you want the value of the property to be set and always put within
+                    quotations. The below example shows three possible values of align attribute: <b> left,
+                        center</b> and <b>right</b>.</p>
+            </li>
+        </ul>
+        <p>Attribute names and attribute values are case-insensitive. However, the World Wide Web Consortium (W3C)
+            recommends lowercase attributes/attribute values in their HTML 4 recommendation.</p><br>
+        <h3>Example</h3>
+       
+        <pre class="codebox">
+         &lt;!DOCTYPE html&gt; 
+         &lt;html&gt;
+
+         &lt;head&gt; 
+         &lt;title&gt;Align Attribute  Example&lt;/title&gt; 
+         &lt;/head&gt;
+
+         &lt;body&gt; 
+         &lt;p align = "left"&gt;This is left aligned&lt;/p&gt; 
+         &lt;p align = "center"&gt;This is center aligned&lt;/p&gt; 
+         &lt;p align = "right"&gt;This is right aligned&lt;/p&gt; 
+         &lt;/body&gt;
+
+         &lt;/html&gt;
+      </pre>
+      <br>
+        <h1>Core Attributes</h1>
+        <p>The four core attributes that can be used on the majority of HTML elements (although not all) are &minus;
+        </p>
+        <ul class="list">
+            <li>Id</li>
+            <li>Title</li>
+            <li>Class</li>
+            <li>Style</li>
+        </ul><br>
+        <h2>The Id Attribute</h2>
+        <p>The <b>id</b> attribute of an HTML tag can be used to uniquely identify any element within an HTML page.
+            There are two primary reasons that you might want to use an id attribute on an element &minus;</p>
+        <ul class="list">
+            <li>
+                <p>If an element carries an id attribute as a unique identifier, it is possible to identify just
+                    that element and its content.</p>
+            </li>
+            <li>
+                <p>If you have two elements of the same name within a Web page (or style sheet), you can use the id
+                    attribute to distinguish between elements that have the same name.</p>
+            </li>
+        </ul>
+        <p>We will discuss style sheet in separate tutorial. For now, let's use the id attribute to distinguish
+            between two paragraph elements as shown below.</p>
+        <p><b>Example</b></p>
+        <pre class="codebox">
+&lt;p id = "html"&gt;This para explains what is HTML&lt;/p&gt;
+&lt;p id = "css"&gt;This para explains what is Cascading Style Sheet&lt;/p&gt;
+</pre><br>
+        <h3>The title Attribute</h3>
+        <p>The <b>title</b> attribute gives a suggested title for the element. They syntax for the <b>title</b>
+            attribute is similar as explained for <b>id</b> attribute &minus;</p>
+        <p>The behavior of this attribute will depend upon the element that carries it, although it is often
+            displayed as a tooltip when cursor comes over the element or while the element is loading.</p>
+        <p><b>Example</b></p>
+        
+        <pre class="codebox">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;The title Attribute Example&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h3 title = "Hello HTML!"&gt;Titled Heading Tag Example&lt;/h3&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+       
+        <p>Now try to bring your cursor over "Titled Heading Tag Example" and you will see that whatever title you
+            used in your code is coming out as a tooltip of the cursor.</p>
+        <h3>The class Attribute</h3>
+        <p>The <b>class</b> attribute is used to associate an element with a style sheet, and specifies the class of
+            element. You will learn more about the use of the class attribute when you will learn Cascading Style
+            Sheet (CSS). So for now you can avoid it.</p>
+        <p>The value of the attribute may also be a space-separated list of class names. For example &minus;</p>
+        <pre class="result notranslate">
+class = "className1 className2 className3"
+</pre><br>
+       <h2>The style Attribute</h2>
+        <p>The style attribute allows you to specify Cascading Style Sheet (CSS) rules within the element.</p>
+      
+        <pre class="codebox">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;title&gt;The style Attribute&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;p style = "font-family:arial; color:#FF0000;"&gt;Some text...&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+        <p>At this point of time, we are not learning CSS, so just let's proceed without bothering much about CSS.
+            Here, you need to understand what are HTML attributes and how they can be used while formatting content.
+        </p><br>
+        <h3>Internationalization Attributes</h3>
+        <p>There are three internationalization attributes, which are available for most (although not all) XHTML
+            elements.</p>
+        <ul class="list">
+            <li>dir</li>
+            <li>lang</li>
+            <li>xml:lang </li>
+        </ul><br>
+        <h2>The dir Attribute</h2>
+        <p>The <b>dir</b> attribute allows you to indicate to the browser about the direction in which the text
+            should flow. The dir attribute can take one of two values, as you can see in the table that follows
+            &minus;</p>
+        <table class="table table-bordered">
+            <tr>
+                <th style="text-align:center;">Value</th>
+                <th style="text-align:center;">Meaning</th>
+            </tr>
+            <tr>
+                <td>ltr</td>
+                <td>Left to right (the default value)</td>
+            </tr>
+            <tr>
+                <td>rtl</td>
+                <td>Right to left (for languages such as Hebrew or Arabic that are read right to left)</td>
+            </tr>
+        </table>
+        <p><b>Example</b></p>
+      
+        <pre class="codebox">
+        &lt;!DOCTYPE html&gt;
+        &lt;html dir = "rtl"&gt;
+        
+           &lt;head&gt;
+              &lt;title&gt;Display Directions&lt;/title&gt;
+           &lt;/head&gt;
+            
+           &lt;body&gt;
+              This is how IE 5 renders right-to-left directed text.
+           &lt;/body&gt;
+            
+        &lt;/html&gt;
+        </pre>
+        <p>When <i>dir</i> attribute is used within the &lt;html&gt; tag, it determines how text will be presented within the entire document. When used within another tag, it controls the text's direction for just the content of that tag.</p><br>
+        <h3>The lang Attribute</h3>
+        <p>The <b>lang</b> attribute allows you to indicate the main language used in a document, but this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML. This attribute has been replaced by the <b>xml:lang</b> attribute in new XHTML documents.</p>
+        <p>The values of the <i>lang</i> attribute are ISO-639 standard two-character language codes. Check <a href="/html/language_iso_codes.htm"><b>HTML Language Codes: ISO 639</b></a> for a complete list of language codes.</p>
+        <p><b>Example</b></p>
+       
+        <pre class="codebox">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang = "en"&gt;
+        
+           &lt;head&gt;
+              &lt;title&gt;English Language Page&lt;/title&gt;
+           &lt;/head&gt;
+        
+           &lt;body&gt;
+              This page is using English Language
+           &lt;/body&gt;
+        
+        &lt;/html&gt;
+        </pre><br>
+       <h2>The xml:lang Attribute</h2>
+        The <i>xml:lang</i> attribute is the XHTML replacement for the <i>lang</i> attribute. The value of the <i>xml:lang</i> attribute should be an ISO-639 country code as mentioned in previous section.<br>
+        <h3>Generic Attributes</h3>
+        Here's a table of some other attributes that are readily usable with many of the HTML tags.
+        <table class="table table-bordered">
+        <tr>
+        <th style="text-align:center;">Attribute</th>
+        <th style="text-align:center;">Options</th>
+        <th style="text-align:center;">Function</th>
+        </tr>
+        <tr>
+        <td>align</td>
+        <td>right, left, center</td>
+        <td>Horizontally aligns tags</td>
+        </tr>
+        <tr>
+        <td>valign</td>
+        <td>top, middle, bottom</td>
+        <td>Vertically aligns tags within an HTML element.</td>
+        </tr>
+        <tr>
+        <td>bgcolor</td>
+        <td>numeric, hexidecimal, RGB values</td>
+        <td>Places a background color behind an element</td>
+        </tr>
+        <tr>
+        <td>background</td>
+        <td>URL</td>
+        <td>Places a background image behind an element</td>
+        </tr>
+        <tr>
+        <td>id</td>
+        <td>User Defined</td>
+        <td>Names an element for use with Cascading Style Sheets.</td>
+        </tr>
+        <tr>
+        <td>class</td>
+        <td>User Defined</td>
+        <td>Classifies an element for use with Cascading Style Sheets.</td>
+        </tr>
+        <tr>
+        <td>width</td>
+        <td>Numeric Value</td>
+        <td>Specifies the width of tables, images, or table cells.</td>
+        </tr>
+        <tr>
+        <td>height</td>
+        <td>Numeric Value</td>
+        <td>Specifies the height of tables, images, or table cells.</td>
+        </tr>
+        <tr>
+        <td>title</td>
+        <td>User Defined</td>
+        <td>"Pop-up" title of the elements.</td>
+        </tr>
+        </table>
+       We will see related examples as we will proceed to study other HTML tags. For a complete list of HTML Tags and related attributes please check reference to HTML Tags List
+        <br>
+</section>
+    
+          </div>
+    
+          <input id="box4" name="box" type="radio"> 
+          <label for="box4"> HTML-Images</label>
+          <div class="content">
+              <h2>HTML-Images</h2>
+              <br>
+              <p>Images are very important to beautify as well as to depict many complex concepts in simple way on your web page. This tutorial will take you through simple steps to use images in your web pages.</p>
+              <h2>Insert Image</h2><br>
+              <p>You can insert any image in your web page by using <b>&lt;img&gt;</b> tag. Following is the simple syntax to use this tag.</p>
+              <pre class="codebox">
+              &lt;img src = "Image URL" ... attributes-list/&gt;
+              </pre>
+              <p>The &lt;img&gt; tag is an empty tag, which means that, it can contain only list of attributes and it has no closing tag.</p>
+              <br><h3>Example</h3>
+              <p>To try following example, let's keep our HTML file test.htm and image file test.png in the same directory &minus;</p>
+              <pre class="codebox">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              
+              &lt;head&gt;
+                &lt;title&gt;Using Image in Webpage&lt;/title&gt;
+              &lt;/head&gt;
+              
+              &lt;body&gt;
+                &lt;p&gt;Simple Image Insert&lt;/p&gt;
+                &lt;img src = "/html/images/test.png" alt = "Test Image" /&gt;
+              &lt;/body&gt;
+              
+              &lt;/html&gt;
+              </pre>
+              <p>You can use PNG, JPEG or GIF image file based on your comfort but make sure you specify correct image file name in <b>src</b> attribute. Image name is always case sensitive.</p>
+              <p>The <b>alt</b> attribute is a mandatory attribute which specifies an alternate text for an image, if the image cannot be displayed.</p>
+              <br><br><h2>Set Image Location</h2>
+              <p>Usually we keep all the images in a separate directory. So let's keep HTML file test.htm in our home directory and create a subdirectory <b>images</b> inside the home directory where we will keep our image test.png.</p> <br><br>
+              <h3>Example</h3>
+              <p>Assuming our image location is "image/test.png", try the following example &minus;</p>
+              <pre class="codebox">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              
+              &lt;head&gt;
+                &lt;title&gt;Using Image in Webpage&lt;/title&gt;
+              &lt;/head&gt;
+              
+              &lt;body&gt;
+                &lt;p&gt;Simple Image Insert&lt;/p&gt;
+                &lt;img src = "/html/images/test.png" alt = "Test Image" /&gt;
+              &lt;/body&gt;
+              
+              &lt;/html&gt;
+              </pre><br>
+              <h2>Set Image Width/Height</h2>
+              <p>You can set image width and height based on your requirement using <b>width</b> and <b>height</b> attributes. You can specify width and height of the image in terms of either pixels or percentage of its actual size.</p>
+              <h3>Example</h3>
+              <pre class="codebox">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              
+              &lt;head&gt;
+                &lt;title&gt;Set Image Width and Height&lt;/title&gt;
+              &lt;/head&gt;
+              
+              &lt;body&gt;
+                &lt;p&gt;Setting image width and height&lt;/p&gt;
+                &lt;img src = "/html/images/test.png" alt = "Test Image" width = "150" height = "100"/&gt;
+              &lt;/body&gt;
+              
+              &lt;/html&gt;
+              </pre>
+              <br><h2>Set Image Border</h2>
+              <p>By default, image will have a border around it, you can specify border thickness in terms of pixels using border attribute. A thickness of 0 means, no border around the picture.</p>
+              <h3>Example</h3>
+              <pre class="codebox">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              
+              &lt;head&gt;
+                &lt;title&gt;Set Image Border&lt;/title&gt;
+              &lt;/head&gt;
+              
+              &lt;body&gt;
+                &lt;p&gt;Setting image Border&lt;/p&gt;
+                &lt;img src = "/html/images/test.png" alt = "Test Image" border = "3"/&gt;
+              &lt;/body&gt;
+              
+              &lt;/html&gt;
+              </pre>
+              <br><h2>Set Image Alignment</h2>
+              <p>By default, image will align at the left side of the page, but you can use <b>align</b> attribute to set it in the center or right.</p>
+              <h3>Example</h3>
+              <pre class="codebox">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              
+              &lt;head&gt;
+                &lt;title&gt;Set Image Alignment&lt;/title&gt;
+              &lt;/head&gt;
+              
+              &lt;body&gt;
+                &lt;p&gt;Setting image Alignment&lt;/p&gt;
+                &lt;img src = "/html/images/test.png" alt = "Test Image" border = "3" align = "right"/&gt;
+              &lt;/body&gt;
+              
+              &lt;/html&gt;
+              </pre>
+              <br><h2>Free Web Graphics</h2>
+              <p>For Free Web Graphics including patterns you can look into Free Web Graphics</p>
+              
+                    </div> 
+              
+             
+              
+              <input id="box5" name="box" type="radio"> 
+              <label for="box5"> HTML-Table</label>
+              <div class="content">
+                  <h2>HTML-Tables</h2>
+                  <br><p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+                  <p>The HTML tables are created using the <b>&lt;table&gt;</b> tag in which the <b>&lt;tr&gt;</b> tag is used to create table rows and <b>&lt;td&gt;</b> tag is used to create data cells. The elements under &lt;td&gt; are regular and left aligned by default</p>
+                 <br> <h2>Example</h2>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Tables&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1"&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                              &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                           &lt;/tr&gt;
+                           
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                              &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                        
+                     &lt;/body&gt;
+                  &lt;/html&gt;
+                  </pre>
+                  <p>Here, the <b>border</b> is an attribute of &lt;table&gt; tag and it is used to put a border across all the cells. If you do not need a border, then you can use border = "0".</p>
+                 <br><br> <h2>Table Heading</h2>
+                  <p>Table heading can be defined using <b>&lt;th&gt;</b> tag. This tag will be put to replace &lt;td&gt; tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use &lt;th&gt; element in any row. Headings, which are defined in &lt;th&gt; tag are centered and bold by default.</p>
+                  <h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Header&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1"&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Name&lt;/th&gt;
+                              &lt;th&gt;Salary&lt;/th&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Ramesh Raman&lt;/td&gt;
+                              &lt;td&gt;5000&lt;/td&gt;
+                           &lt;/tr&gt;
+                           
+                           &lt;tr&gt;
+                              &lt;td&gt;Shabbir Hussein&lt;/td&gt;
+                              &lt;td&gt;7000&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Cellpadding and Cellspacing Attributes</h2>
+                  <p>There are two attributes called <i>cellpadding</i> and <i>cellspacing</i> which you will use to adjust the white space in your table cells. The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.</p>
+                  <br><h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Cellpadding&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" cellpadding = "5" cellspacing = "5"&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Name&lt;/th&gt;
+                              &lt;th&gt;Salary&lt;/th&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Ramesh Raman&lt;/td&gt;
+                              &lt;td&gt;5000&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Shabbir Hussein&lt;/td&gt;
+                              &lt;td&gt;7000&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Colspan and Rowspan Attributes</h2>
+                  <p>You will use <b>colspan</b> attribute if you want to merge two or more columns into a single column. Similar way you will use <b>rowspan</b> if you want to merge two or more rows.</p>
+                  <br><h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Colspan/Rowspan&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1"&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Column 1&lt;/th&gt;
+                              &lt;th&gt;Column 2&lt;/th&gt;
+                              &lt;th&gt;Column 3&lt;/th&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td rowspan = "2"&gt;Row 1 Cell 1&lt;/td&gt;
+                              &lt;td&gt;Row 1 Cell 2&lt;/td&gt;
+                              &lt;td&gt;Row 1 Cell 3&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 2 Cell 2&lt;/td&gt;
+                              &lt;td&gt;Row 2 Cell 3&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td colspan = "3"&gt;Row 3 Cell 1&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Tables Backgrounds</h2>
+                  <p>You can set table background using one of the following two ways &minus;</p>
+                  <ul class="list">
+                  <li><p><b>bgcolor</b> attribute &minus; You can set background color for whole table or just for one cell.</p></li>
+                  <li><p><b>background</b> attribute &minus; You can set background image for whole table or just for one cell.</p></li>
+                  </ul>
+                  <p>You can also set border color also using <b>bordercolor</b> attribute.</p>
+                  <blockquote><p><b>Note</b> &minus; The <i>bgcolor</i>, <i>background</i>, and <i>bordercolor</i> attributes deprecated in HTML5. Do not use these attributes.</p></blockquote>
+                  <br><h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Background&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" bordercolor = "green" bgcolor = "yellow"&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Column 1&lt;/th&gt;
+                              &lt;th&gt;Column 2&lt;/th&gt;
+                              &lt;th&gt;Column 3&lt;/th&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td rowspan = "2"&gt;Row 1 Cell 1&lt;/td&gt;
+                              &lt;td&gt;Row 1 Cell 2&lt;/td&gt;
+                              &lt;td&gt;Row 1 Cell 3&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 2 Cell 2&lt;/td&gt;
+                              &lt;td&gt;Row 2 Cell 3&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td colspan = "3"&gt;Row 3 Cell 1&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <p>Here is an example of using <b>background</b> attribute. Here we will use an image available in /images directory.</p> <br>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Background&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" bordercolor = "green" background = "/images/test.png"&gt;
+                           &lt;tr&gt;
+                              &lt;th&gt;Column 1&lt;/th&gt;
+                              &lt;th&gt;Column 2&lt;/th&gt;
+                              &lt;th&gt;Column 3&lt;/th&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td rowspan = "2"&gt;Row 1 Cell 1&lt;/td&gt;
+                              &lt;td&gt;Row 1 Cell 2&lt;/td&gt;&lt;td&gt;Row 1 Cell 3&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 2 Cell 2&lt;/td&gt;
+                              &lt;td&gt;Row 2 Cell 3&lt;/td&gt;
+                           &lt;/tr&gt;
+                           &lt;tr&gt;
+                              &lt;td colspan = "3"&gt;Row 3 Cell 1&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Table Height and Width</h2>
+                  <p>You can set a table width and height using <b>width</b> and <b>height</b> attributes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.</p>
+                  <br><h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Width/Height&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" width = "400" height = "150"&gt;
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                              &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                           &lt;/tr&gt;
+                           
+                           &lt;tr&gt;
+                              &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                              &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Table Caption</h2>
+                  <p>The <b>caption</b> tag will serve as a title or explanation for the table and it shows up at the top of the table. This tag is deprecated in newer version of HTML/XHTML.</p>
+                  <br><h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table Caption&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" width = "100%"&gt;
+                           &lt;caption&gt;This is the caption&lt;/caption&gt;
+                           
+                           &lt;tr&gt;
+                              &lt;td&gt;row 1, column 1&lt;/td&gt;&lt;td&gt;row 1, columnn 2&lt;/td&gt;
+                           &lt;/tr&gt;
+                           
+                           &lt;tr&gt;
+                              &lt;td&gt;row 2, column 1&lt;/td&gt;&lt;td&gt;row 2, columnn 2&lt;/td&gt;
+                           &lt;/tr&gt;
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Table Header, Body, and Footer</h2>
+                  <p>Tables can be divided into three portions &minus; a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, while the body is the main content holder of the table.</p>
+                  <p>The three elements for separating the head, body, and foot of a table are &minus;</p>
+                  <ul class="list">
+                  <li><p><b>&lt;thead&gt;</b> &minus; to create a separate table header.</p></li>
+                  <li><p><b>&lt;tbody&gt;</b> &minus; to indicate the main body of the table.</p></li>
+                  <li><p><b>&lt;tfoot&gt;</b> &minus; to create a separate table footer.</p></li>
+                  </ul>
+                  <p>A table may contain several &lt;tbody&gt; elements to indicate <i>different pages</i> or groups of data. But it is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;</p>
+                  <br><h3>Example</h3>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" width = "100%"&gt;
+                           &lt;thead&gt;
+                              &lt;tr&gt;
+                                 &lt;td colspan = "4"&gt;This is the head of the table&lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/thead&gt;
+                           
+                           &lt;tfoot&gt;
+                              &lt;tr&gt;
+                                 &lt;td colspan = "4"&gt;This is the foot of the table&lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tfoot&gt;
+                           
+                           &lt;tbody&gt;
+                              &lt;tr&gt;
+                                 &lt;td&gt;Cell 1&lt;/td&gt;
+                                 &lt;td&gt;Cell 2&lt;/td&gt;
+                                 &lt;td&gt;Cell 3&lt;/td&gt;
+                                 &lt;td&gt;Cell 4&lt;/td&gt;
+                              &lt;/tr&gt;
+                           &lt;/tbody&gt;
+                           
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+                  <br><h2>Nested Tables</h2>
+                  <p>You can use one table inside another table. Not only tables you can use almost all the tags inside table data tag &lt;td&gt;.</p>
+                  <br><h3>Example</h3>
+                  <p>Following is the example of using another table and other tags inside a table cell.</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Table&lt;/title&gt;
+                     &lt;/head&gt;
+                      
+                     &lt;body&gt;
+                        &lt;table border = "1" width = "100%"&gt;
+                           
+                           &lt;tr&gt;
+                              &lt;td&gt;
+                                 &lt;table border = "1" width = "100%"&gt;
+                                    &lt;tr&gt;
+                                       &lt;th&gt;Name&lt;/th&gt;
+                                       &lt;th&gt;Salary&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                       &lt;td&gt;Ramesh Raman&lt;/td&gt;
+                                       &lt;td&gt;5000&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr&gt;
+                                       &lt;td&gt;Shabbir Hussein&lt;/td&gt;
+                                       &lt;td&gt;7000&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                 &lt;/table&gt;
+                              &lt;/td&gt;
+                           &lt;/tr&gt;
+                           
+                        &lt;/table&gt;
+                     &lt;/body&gt;
+                      
+                  &lt;/html&gt;
+                  </pre>
+            
+             
+      
+            </div> 
+            <input id="box6" name="box" type="radio"> 
+              <label for="box6"> HTML-Lists</label>
+              <div class="content">
+                  <h2>HTML-Lists</h2>
+                  <br>
+                  <p>HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain &minus;</p>
+                  <ul class="list">
+                  <li><p><b>&lt;ul&gt;</b> &minus; An unordered list. This will list items using plain bullets.</p></li>
+                  <li><p><b>&lt;ol&gt;</b> &minus; An ordered list. This will use different schemes of numbers to list your items.</p></li>
+                  <li><p><b>&lt;dl&gt;</b> &minus; A definition list. This arranges your items in the same way as they are arranged in a dictionary.</p></li>
+                  </ul>
+                  <h2>HTML Unordered Lists</h2>
+                  <p>An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML <b>&lt;ul&gt;</b> tag. Each item in the list is marked with a bullet.</p>
+                  <h3>Example</h3> <br>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Unordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ul&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ul&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h2>The type Attribute</h2>
+                  <p>You can use <b>type</b> attribute for &lt;ul&gt; tag to specify the type of bullet you like. By default, it is a disc. Following are the possible options &minus;</p>
+                  <pre class="result notranslate">
+                  &lt;ul type = "square"&gt;
+                  &lt;ul type = "disc"&gt;
+                  &lt;ul type = "circle"&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ul type = "square"&gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Unordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                  
+                     &lt;body&gt;
+                        &lt;ul type = "square"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ul&gt;
+                     &lt;/body&gt;
+                  
+                  &lt;/html&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ul type = "disc"&gt; &minus;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Unordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ul type = "disc"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ul&gt;
+                     &lt;/body&gt;
+                  
+                  &lt;/html&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ul type = "circle"&gt; &minus;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Unordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                  
+                     &lt;body&gt;
+                        &lt;ul type = "circle"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ul&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h2>HTML Ordered Lists</h2>
+                  <p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. This list is created by using <b>&lt;ol&gt;</b> tag. The numbering starts at one and is incremented by one for each successive ordered list element tagged with &lt;li&gt;.</p>
+                  <h3>Example</h3> <br>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                  
+                     &lt;body&gt;
+                        &lt;ol&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                  
+                  &lt;/html&gt;
+                  </pre>
+                  <h2>The type Attribute</h2>
+                  <p>You can use <b>type</b> attribute for &lt;ol&gt; tag to specify the type of numbering you like. By default, it is a number. Following are the possible options &minus;</p>
+                  <pre class="result notranslate">
+                  &lt;ol type = "1"&gt; - Default-Case Numerals.
+                  &lt;ol type = "I"&gt; - Upper-Case Numerals.
+                  &lt;ol type = "i"&gt; - Lower-Case Numerals.
+                  &lt;ol type = "A"&gt; - Upper-Case Letters.
+                  &lt;ol type = "a"&gt; - Lower-Case Letters.
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ol type = "1"&gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                  
+                     &lt;body&gt;
+                        &lt;ol type = "1"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                  
+                  &lt;/html&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ol type = "I"&gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ol type = "I"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ol type = "i"&gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                     
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ol type = "i"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ol type = "A" &gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ol type = "A"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h3>Example</h3> <br>
+                  <p>Following is an example where we used &lt;ol type = "a"&gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                     
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ol type = "a"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h2>The start Attribute</h2>
+                  <p>You can use <b>start</b> attribute for &lt;ol&gt; tag to specify the starting point of numbering you need. Following are the possible options &minus;</p>
+                  <pre class="codebox">
+                  &lt;ol type = "1" start = "4"&gt;    - Numerals starts with 4.
+                  &lt;ol type = "I" start = "4"&gt;    - Numerals starts with IV.
+                  &lt;ol type = "i" start = "4"&gt;    - Numerals starts with iv.
+                  &lt;ol type = "a" start = "4"&gt;    - Letters starts with d.
+                  &lt;ol type = "A" start = "4"&gt;    - Letters starts with D.
+                  </pre>
+                  <h3>Example</h3> <br> 
+                  <p>Following is an example where we used &lt;ol type = "i" start = "4" &gt;</p>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;ol type = "i" start = "4"&gt;
+                           &lt;li&gt;Beetroot&lt;/li&gt;
+                           &lt;li&gt;Ginger&lt;/li&gt;
+                           &lt;li&gt;Potato&lt;/li&gt;
+                           &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre>
+                  <h2>HTML Definition Lists</h2>
+                  <p>HTML and XHTML supports a list style which is called <b>definition lists</b> where entries are listed like in a dictionary or encyclopedia. The definition list is the ideal way to present a glossary, list of terms, or other name/value list.</p>
+                  <p>Definition List makes use of following three tags.</p>
+                  <ul class="list">
+                  <li>&lt;dl&gt; &minus; Defines the start of the list</li>
+                  <li>&lt;dt&gt; &minus; A term</li>
+                  <li>&lt;dd&gt; &minus; Term definition</li>
+                  <li>&lt;/dl&gt; &minus; Defines the end of the list</li>
+                  </ul>
+                  <h3>Example</h3> <br>
+                  <pre class="codebox">
+                  &lt;!DOCTYPE html&gt;
+                  &lt;html&gt;
+                  
+                     &lt;head&gt;
+                        &lt;title&gt;HTML Definition List&lt;/title&gt;
+                     &lt;/head&gt;
+                     
+                     &lt;body&gt;
+                        &lt;dl&gt;
+                           &lt;dt&gt;&lt;b&gt;HTML&lt;/b&gt;&lt;/dt&gt;
+                           &lt;dd&gt;This stands for Hyper Text Markup Language&lt;/dd&gt;
+                           &lt;dt&gt;&lt;b&gt;HTTP&lt;/b&gt;&lt;/dt&gt;
+                           &lt;dd&gt;This stands for Hyper Text Transfer Protocol&lt;/dd&gt;
+                        &lt;/dl&gt;
+                     &lt;/body&gt;
+                     
+                  &lt;/html&gt;
+                  </pre> <br>
+                         
+                        </div> 
+                        <input id="box7" name="box" type="radio"> 
+                        <label for="box7"> HTML-Forms</label>
+                        <div class="content">
+                            <h2>HTML-Forms</h2>
+                            <br>
+                            <p>HTML Forms are required, when you want to collect some data from the site visitor. For example, during user registration you would like to collect information such as name, email address, credit card, etc.</p>
+            <p>A form will take input from the site visitor and then will post it to a back-end application such as CGI, ASP Script or PHP script etc. The back-end application will perform required processing on the passed data based on defined business logic inside the application.</p>
+            <p>There are various form elements available like text fields, textarea fields, drop-down menus, radio buttons, checkboxes, etc.</p>
+            <p>The HTML <b>&lt;form&gt;</b> tag is used to create an HTML form and it has following syntax &minus;</p>
+            <pre class="result notranslate">
+            &lt;form action = "Script URL" method = "GET|POST"&gt;
+               form elements like input, textarea etc.
+            &lt;/form&gt;
+            </pre>
+            <h2>Form Attributes</h2><br>
+            <p>Apart from common attributes, following is a list of the most frequently used form attributes &minus;</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>action</b></p>
+            <p>Backend script ready to process your passed data.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>method</b></p>
+            <p>Method to be used to upload data. The most frequently used are GET and POST methods.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>target</b></p>
+            <p>Specify the target window or frame where the result of the script will be displayed. It takes values like _blank, _self, _parent etc.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">4</td>
+            <td>
+            <p><b>enctype</b></p>
+            <p>You can use the enctype attribute to specify how the browser encodes the data before it sends it to the server. Possible values are &minus;</p>
+            <p><b>application/x-www-form-urlencoded</b> &minus; This is the standard method most forms use in simple scenarios.</p>
+            <p><b>mutlipart/form-data</b> &minus; This is used when you want to upload binary data in the form of files like image, word file etc.</p>
+            </td>
+            </tr>
+            </table>
+            <h2>HTML Form Controls</h2><br>
+            <p>There are different types of form controls that you can use to collect data using HTML form &minus;</p>
+            <ul class="list">
+            <li>Text Input Controls</li>
+            <li>Checkboxes Controls</li>
+            <li>Radio Box Controls</li>
+            <li>Select Box Controls</li>
+            <li>File Select boxes</li>
+            <li>Hidden Controls</li>
+            <li>Clickable Buttons</li>
+            <li>Submit and Reset Button</li>
+            </ul>
+            <h2>Text Input Controls</h2><br>
+            <p>There are three types of text input used on forms &minus;</p>
+            <ul class="list">
+            <li><p><b>Single-line text input controls</b> &minus; This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML <b>&lt;input&gt;</b> tag.</p></li>
+            <li><p><b>Password input controls</b> &minus; This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &lt;input&gt; tag.</p></li>
+            <li><p><b>Multi-line text input controls</b> &minus; This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML <b>&lt;textarea&gt;</b> tag.</p></li>
+            </ul>
+            <h2>Single-line text input controls</h2><br>
+            <p>This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &lt;input&gt; tag.</p>
+            <h3>Example</h3>
+            <p>Here is a basic example of a single-line text input used to take first name and last name &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;Text Input Control&lt;/title&gt;
+               &lt;/head&gt;
+                
+               &lt;body&gt;
+                  &lt;form &gt;
+                     First name: &lt;input type = "text" name = "first_name" /&gt;
+                     &lt;br&gt;
+                     Last name: &lt;input type = "text" name = "last_name" /&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of attributes for &lt;input&gt; tag for creating text field.</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>type</b></p>
+            <p>Indicates the type of input control and for text input control it will be set to <b>text</b>.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>value</b></p>
+            <p>This can be used to provide an initial value inside the control.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">4</td>
+            <td>
+            <p><b>size</b></p>
+            <p>Allows to specify the width of the text-input control in terms of characters.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">5</td>
+            <td>
+            <p><b>maxlength</b></p>
+            <p>Allows to specify the maximum number of characters a user can enter into the text box.</p></td>
+            </tr>
+            </table>
+            <h2>Password input controls</h2><br>
+            <p>This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTML &lt;input&gt;tag but type attribute is set to <b>password</b>.</p>
+            <h3>Example</h3>
+            <p>Here is a basic example of a single-line password input used to take user password &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;Password Input Control&lt;/title&gt;
+               &lt;/head&gt;
+                
+               &lt;body&gt;
+                  &lt;form &gt;
+                     User ID : &lt;input type = "text" name = "user_id" /&gt;
+                     &lt;br&gt;
+                     Password: &lt;input type = "password" name = "password" /&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of attributes for &lt;input&gt; tag for creating password field.</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>type</b></p>
+            <p>Indicates the type of input control and for password input control it will be set to <b>password</b>.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>value</b></p>
+            <p>This can be used to provide an initial value inside the control.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">4</td>
+            <td>
+            <p><b>size</b></p>
+            <p>Allows to specify the width of the text-input control in terms of characters.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">5</td>
+            <td>
+            <p><b>maxlength</b></p>
+            <p>Allows to specify the maximum number of characters a user can enter into the text box.</p>
+            </td>
+            </tr>
+            </table>
+            <h2>Multiple-Line Text Input Controls</h2><br>
+            <p>This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lt;textarea&gt; tag.</p>
+            <h3>Example</h3>
+            <p>Here is a basic example of a multi-line text input used to take item description &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;Multiple-Line Input Control&lt;/title&gt;
+               &lt;/head&gt;
+                
+               &lt;body&gt;
+                  &lt;form&gt;
+                     Description : &lt;br /&gt;
+                     &lt;textarea rows = "5" cols = "50" name = "description"&gt;
+                        Enter description here...
+                     &lt;/textarea&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of attributes for &lt;textarea&gt; tag.</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>rows</b></p>
+            <p>Indicates the number of rows of text area box.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>cols</b></p>
+            <p>Indicates the number of columns of text area box</p>
+            </td>
+            </tr>
+            </table>
+            <h2>Checkbox Control</h2><br>
+            <p>Checkboxes are used when more than one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>checkbox.</b>.</p>
+            <h3>Example</h3>
+            <p>Here is an example HTML code for a form with two checkboxes &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;Checkbox Control&lt;/title&gt;
+               &lt;/head&gt;
+                
+               &lt;body&gt;
+                  &lt;form&gt;
+                     &lt;input type = "checkbox" name = "maths" value = "on"&gt; Maths
+                     &lt;input type = "checkbox" name = "physics" value = "on"&gt; Physics
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>type</b></p>
+            <p>Indicates the type of input control and for checkbox input control it will be set to <b>checkbox.</b>.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>value</b></p>
+            <p>The value that will be used if the checkbox is selected.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">4</td>
+            <td>
+            <p><b>checked</b></p>
+            <p>Set to <i>checked</i> if you want to select it by default.</p>
+            </td>
+            </tr>
+            </table>
+            <h2>Radio Button Control</h2><br>
+            <p>Radio buttons are used when out of many options, just one option is required to be selected. They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>radio</b>.</p>
+            <h3>Example</h3>
+            <p>Here is example HTML code for a form with two radio buttons &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;Radio Box Control&lt;/title&gt;
+               &lt;/head&gt;
+            
+               &lt;body&gt;
+                  &lt;form&gt;
+                     &lt;input type = "radio" name = "subject" value = "maths"&gt; Maths
+                     &lt;input type = "radio" name = "subject" value = "physics"&gt; Physics
+                  &lt;/form&gt;
+               &lt;/body&gt;
+            
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of attributes for radio button.</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>type</b></p>
+            <p>Indicates the type of input control and for checkbox input control it will be set to radio.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>value</b></p>
+            <p>The value that will be used if the radio box is selected.</p></td>
+            </tr>
+            <tr>
+            <td class="ts">4</td>
+            <td>
+            <p><b>checked</b></p>
+            <p>Set to <i>checked</i> if you want to select it by default.</p>
+            </td>
+            </tr>
+            </table>
+            <h2>Select Box Control</h2><br>
+            <p>A select box, also called drop down box which provides option to list down various options in the form of drop down list, from where a user can select one or more options.</p>
+            <h3>Example</h3>
+            <p>Here is example HTML code for a form with one drop down box</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;Select Box Control&lt;/title&gt;
+               &lt;/head&gt;
+                
+               &lt;body&gt;
+                  &lt;form&gt;
+                     &lt;select name = "dropdown"&gt;
+                        &lt;option value = "Maths" selected&gt;Maths&lt;/option&gt;
+                        &lt;option value = "Physics"&gt;Physics&lt;/option&gt;
+                     &lt;/select&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of important attributes of &lt;select&gt; tag &minus;</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>size</b></p>
+            <p>This can be used to present a scrolling list box.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>multiple</b></p>
+            <p>If set to "multiple" then allows a user to select multiple items from the menu.</p>
+            </td>
+            </tr>
+            </table>
+            <p>Following is the list of important attributes of &lt;option&gt; tag &minus;</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>value</b></p>
+            <p>The value that will be used if an option in the select box box is selected.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>selected</b></p>
+            <p>Specifies that this option should be the initially selected value when the page loads.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>label</b></p>
+            <p>An alternative way of labeling options</p>
+            </td>
+            </tr>
+            </table>
+            <h2>File Upload Box</h2><br>
+            <p>If you want to allow a user to upload a file to your web site, you will need to use a file upload box, also known as a file select box. This is also created using the &lt;input&gt; element but type attribute is set to <b>file</b>.</p>
+            <h3>Example</h3>
+            <p>Here is example HTML code for a form with one file upload box &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;File Upload Box&lt;/title&gt;
+               &lt;/head&gt;
+            
+               &lt;body&gt;
+                  &lt;form&gt;
+                     &lt;input type = "file" name = "fileupload" accept = "image/*" /&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Attributes</h2><br>
+            <p>Following is the list of important attributes of file upload box &minus;</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Attribute &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>name</b></p>
+            <p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>accept</b></p>
+            <p>Specifies the types of files that the server accepts.</p>
+            </td>
+            </tr>
+            </table>
+            <h2>Button Controls</h2><br>
+            <p>There are various ways in HTML to create clickable buttons. You can also create a clickable button using &lt;input&gt;tag by setting its type attribute to <b>button</b>. The type attribute can take the following values &minus;</p>
+            <table class="table table-bordered">
+            <tr>
+            <th>Sr.No</th>
+            <th style="text-align:center;">Type &amp; Description</th>
+            </tr>
+            <tr>
+            <td class="ts">1</td>
+            <td>
+            <p><b>submit</b></p>
+            <p>This creates a button that automatically submits a form.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">2</td>
+            <td>
+            <p><b>reset</b></p>
+            <p>This creates a button that automatically resets form controls to their initial values.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">3</td>
+            <td>
+            <p><b>button</b></p>
+            <p>This creates a button that is used to trigger a client-side script when the user clicks that button.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="ts">4</td>
+            <td>
+            <p><b>image</b></p>
+            <p>This creates a clickable button but we can use an image as background of the button.</p>
+            </td>
+            </tr>
+            </table>
+            <h3>Example</h3>
+            <p>Here is example HTML code for a form with three types of buttons &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;File Upload Box&lt;/title&gt;
+               &lt;/head&gt;
+                
+               &lt;body&gt;
+                  &lt;form&gt;
+                     &lt;input type = "submit" name = "submit" value = "Submit" /&gt;
+                     &lt;input type = "reset" name = "reset"  value = "Reset" /&gt;
+                     &lt;input type = "button" name = "ok" value = "OK" /&gt;
+                     &lt;input type = "image" name = "imagebutton" src = "/html/images/logo.png" /&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+            <h2>Hidden Form Controls</h2><br>
+            <p>Hidden form controls are used to hide data inside the page which later on can be pushed to the server. This control hides inside the code and does not appear on the actual page. For example, following hidden form is being used to keep current page number. When a user will click next page then the value of hidden control will be sent to the web server and there it will decide which page will be displayed next based on the passed current page.</p>
+            <h3>Example</h3>
+            <p>Here is example HTML code to show the usage of hidden control &minus;</p>
+            <pre class="codebox">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            
+               &lt;head&gt;
+                  &lt;title&gt;File Upload Box&lt;/title&gt;
+               &lt;/head&gt;
+            
+               &lt;body&gt;
+                  &lt;form&gt;
+                     &lt;p&gt;This is page 10&lt;/p&gt;
+                     &lt;input type = "hidden" name = "pagename" value = "10" /&gt;
+                     &lt;input type = "submit" name = "submit" value = "Submit" /&gt;
+                     &lt;input type = "reset" name = "reset"  value = "Reset" /&gt;
+                  &lt;/form&gt;
+               &lt;/body&gt;
+                
+            &lt;/html&gt;
+            </pre>
+
+      </div> 
+      
+
+              </div>
+</body>
+</html>

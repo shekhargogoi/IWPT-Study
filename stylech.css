@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
+}
+body {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.cards{
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h2.header{
+  font-size: 40px;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services{
+  display: flex;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.content .fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
+  color: white;
+}
+.content:hover a{
+  border-color: white;
+  background: white;
+}
+.content-1:hover{
+  border-color: #1DA1F2;
+  background: #1DA1F2;
+}
+.content-1:hover a{
+  color: #1DA1F2;
+}
+.content-2:hover{
+  border-color: #E1306C;
+  background: #E1306C;
+}
+.content-2:hover a{
+  color: #E1306C;
+}
+.content-3:hover{
+  border-color: #ff0000;
+  background: #ff0000;
+}
+.content-3:hover a{
+  color: #ff0000;
+}
+
+.content-4:hover{
+    border-color: #4300fa;
+    background: #001aff7a;
+  }
+  .content-4:hover a{
+    color: #0004ff;
+  }
+  .content-5:hover{
+    border-color: #4300fa;
+    background: #001aff7a;
+  }
+  .content-5:hover a{
+    color: #0004ff;
+  }
+.content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a{
+  margin: 22px 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/***********nav*************/
+nav {
+	height: 50px;
+	width: 10px;
+	min-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+  }
+  a {
+	position: relative;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding: 0 10px;
+  }
+  a:before,
+  a:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 0;
+	background-color: #18f08b;
+	transition: 0.5s;
+  }
+  a:after {
+	left: 0;
+	bottom: -10px;
+  }
+  a:before {
+	right: 0;
+	top: -10px;
+  }
+  a:hover {
+	color: #1100ff;
+  }

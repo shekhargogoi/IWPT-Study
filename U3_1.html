@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UNIT:3 </title>
+    <link rel="stylesheet" href="style3_1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Unit:3</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Chapter.html">UNITS</a>
+      </nav>
+   <h2 align="center">UNIT : 3</h2>
+   <h1 align="center">CSS</h1>
+   <div class="wrapper">
+       <div class="box">
+     <input checked="checked" id="box1" name="box" type="radio"> 
+     <label for="box1">   CSS     </label>
+     <div class="content">
+        <h3>Introduction to CSS</h3>
+        <p><b>C</b>ascading <b>S</b>tyle <b>S</b>heets, fondly referred to as CSS, is a simple design language
+         intended to simplify the process of making web pages presentable.</p>
+     <p>CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the
+         style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background
+         images or colors are used, layout designs,variations in display for different devices and screen sizes
+         as well as a variety of other effects.</p>
+     <p>CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML
+         document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</p> <br>
+     <h2>Advantages of CSS</h2>
+     <ul class="list">
+         <li>
+             <p><b>CSS saves time</b> &minus; You can write CSS once and then reuse same sheet in multiple HTML
+                 pages. You can define a style for each HTML element and apply it to as many Web pages as you
+                 want.</p>
+         </li>
+         <li>
+             <p><b>Pages load faster</b> &minus; If you are using CSS, you do not need to write HTML tag
+                 attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of
+                 that tag. So less code means faster download times.</p>
+         </li>
+         <li>
+             <p><b>Easy maintenance</b> &minus; To make a global change, simply change the style, and all
+                 elements in all the web pages will be updated automatically.</p>
+         </li>
+         <li>
+             <p><b>Superior styles to HTML</b> &minus; CSS has a much wider array of attributes than HTML, so you
+                 can give a far better look to your HTML page in comparison to HTML attributes.</p>
+         </li>
+         <li>
+             <p><b>Multiple Device Compatibility</b> &minus; Style sheets allow content to be optimized for more
+                 than one type of device. By using the same HTML document, different versions of a website can be
+                 presented for handheld devices such as PDAs and cell phones or for printing.</p>
+         </li>
+         <li>
+             <p><b>Global web standards</b> &minus; Now HTML attributes are being deprecated and it is being
+                 recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them
+                 compatible to future browsers.</p>
+         </li>
+        </p></li>-->
+     </ul> <br>
+     <h2>Who Creates and Maintains CSS?</h2>
+     <p>CSS is created and maintained through a group of people within the W3C called the CSS Working Group. The
+         CSS Working Group creates documents called specifications. When a specification has been discussed and
+         officially ratified by the W3C members, it becomes a recommendation.</p>
+     <p>These ratified specifications are called recommendations because the W3C has no control over the actual
+         implementation of the language. Independent companies and organizations create that software.</p>
+     <p><b>NOTE</b> &minus; The World Wide Web Consortium, or W3C is a group that makes recommendations about how
+         the Internet works and how it should evolve.</p> <br>
+     <h2>CSS Versions</h2>
+     <p>Cascading Style Sheets level 1 (CSS1) came out of W3C as a recommendation in December 1996. This version
+         describes the CSS language as well as a simple visual formatting model for all the HTML tags.</p>
+     <p>CSS2 became a W3C recommendation in May 1998 and builds on CSS1. This version adds support for
+         media-specific style sheets e.g. printers and aural devices, downloadable fonts, element positioning and
+         tables.</p>
+
+
+   </div> 
+
+     <input id="box2" name="box" type="radio"> 
+     <label for="box2"> CSS-Syntax </label>
+     <div class="content">
+        <h3>CSS-SYNTAX </h3>
+
+        <p>A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding
+         elements in your document. A style rule is made of three parts &minus;</p>
+     <ul class="list">
+         <li>
+             <p><b>Selector</b> &minus; A selector is an HTML tag at which a style will be applied. This could be
+                 any tag like &lt;h1&gt; or &lt;table&gt; etc.</p>
+         </li>
+         <li>
+             <p><b>Property</b> &minus; A property is a type of attribute of HTML tag. Put simply, all the HTML
+                 attributes are converted into CSS properties. They could be <i>color</i>, <i>border</i> etc.</p>
+         </li>
+         <li>
+             <p><b>Value</b> &minus; Values are assigned to properties. For example, <i>color</i> property can
+                 have value either <i>red</i> or <i>#F1F1F1</i> etc.</p>
+         </li>
+     </ul>
+     <p>You can put CSS Style Rule Syntax as follows &minus;</p>
+     <pre class="result notranslate">
+     selector { property: value }
+     </pre>
+     <p><b>Example</b> &minus; You can define a table border as follows &minus;</p>
+     <pre class="result notranslate">
+     table{ border :1px solid #C00; }
+     </pre>
+     <p>Here table is a selector and border is a property and given value <i>1px solid #C00</i> is the value of
+         that property.</p>
+     <p>You can define selectors in various simple ways based on your comfort. Let me put these selectors one by
+         one.</p>
+     <br><h2>The Type Selectors</h2>
+     <p>This is the same selector we have seen above. Again, one more example to give a color to all level 1
+         headings &minus;</p>
+     <pre class="codebox">
+     h1 {
+        color: #36CFFF; 
+     }
+     </pre>
+     <br><h2>The Universal Selectors</h2>
+     <p>Rather than selecting elements of a specific type, the universal selector quite simply matches the name
+         of any element type &minus;</p>
+     <pre class="codebox">
+     * { 
+        color: #000000; 
+     }
+     </pre>
+     <p>This rule renders the content of every element in our document in black.</p>
+     <br><h2>The Descendant Selectors</h2>
+     <p>Suppose you want to apply a style rule to a particular element only when it lies inside a particular
+         element. As given in the following example, style rule will apply to &lt;em&gt; element only when it
+         lies inside &lt;ul&gt; tag.</p>
+     <pre class="codebox">
+     ul em {
+        color: #000000; 
+     }
+     </pre>
+     <br><h2>The Class Selectors</h2>
+     <p>You can define style rules based on the class attribute of the elements. All the elements having that
+         class will be formatted according to the defined rule.</p>
+     <pre class="codebox">
+     .black {
+        color: #000000; 
+     }
+     </pre>
+     <p>This rule renders the content in black for every element with class attribute set to <i>black</i> in our
+         document. You can make it a bit more particular. For example &minus;</p>
+     <pre class="codebox">
+     h1.black {
+        color: #000000; 
+     }
+     </pre>
+     <p>This rule renders the content in black for only &lt;h1&gt; elements with class attribute set to
+         <i>black</i>.</p>
+     <p>You can apply more than one class selectors to given element. Consider the following example &minus;</p>
+     <pre class="codebox">
+     &lt;p class = "center bold"&gt;
+        This para will be styled by the classes <i>center</i> and <i>bold</i>.
+     &lt;/p&gt;
+     </pre>
+     <br><h2>The ID Selectors</h2>
+     <p>You can define style rules based on the <i>id</i> attribute of the elements. All the elements having that
+         <i>id</i> will be formatted according to the defined rule.</p>
+     <pre class="codebox">
+     #black {
+        color: #000000; 
+     }
+     </pre>
+     <p>This rule renders the content in black for every element with <i>id</i> attribute set to <i>black</i> in
+         our document. You can make it a bit more particular. For example &minus;</p>
+     <pre class="codebox">
+     h1#black {
+        color: #000000; 
+     }
+     </pre>
+     <p>This rule renders the content in black for only &lt;h1&gt; elements with <i>id</i> attribute set to
+         <i>black</i>. </p>
+     <p>The true power of <i>id</i> selectors is when they are used as the foundation for descendant selectors,
+         For example &minus;</p>
+     <pre class="codebox">
+     #black h2 {
+        color: #000000; 
+     }
+     </pre>
+     <p>In this example all level 2 headings will be displayed in black color when those headings will lie with
+         in tags having <i>id</i> attribute set to <i>black</i>.</p>
+     <br><h2>The Child Selectors</h2>
+     <p>You have seen the descendant selectors. There is one more type of selector, which is very similar to
+         descendants but have different functionality. Consider the following example &minus;</p>
+     <pre class="codebox">
+     body &gt; p {
+        color: #000000; 
+     }
+     </pre>
+     <p>This rule will render all the paragraphs in black if they are direct child of &lt;body&gt; element. Other
+         paragraphs put inside other elements like &lt;div&gt; or &lt;td&gt would not have any effect of this
+         rule.</p>
+     <br><h2>The Attribute Selectors</h2>
+     <p>You can also apply styles to HTML elements with particular attributes. The style rule below will match
+         all the input elements having a type attribute with a value of <i>text</i> &minus;</p>
+     <pre class="codebox">
+     input[type = "text"] {
+        color: #000000; 
+     }
+     </pre>
+     <p>The advantage to this method is that the &lt;input type = "submit" /&gt; element is unaffected, and the
+         color applied only to the desired text fields.</p>
+     <p>There are following rules applied to attribute selector.</p>
+     <ul class="list">
+         <li>
+             <p><b>p[lang]</b> &minus; Selects all paragraph elements with a <i>lang</i> attribute.</p>
+         </li>
+         <li>
+             <p><b>p[lang="fr"]</b> &minus; Selects all paragraph elements whose <i>lang</i> attribute has a
+                 value of exactly "fr".</p>
+         </li>
+         <li>
+             <p><b>p[lang~="fr"]</b> &minus; Selects all paragraph elements whose <i>lang</i> attribute contains
+                 the word "fr".</p>
+         </li>
+         <li>
+             <p><b>p[lang|="en"]</b> &minus; Selects all paragraph elements whose <i>lang</i> attribute contains
+                 values that are exactly "en", or begin with "en-".</p>
+         </li>
+     </ul>
+     <br><h2>Multiple Style Rules</h2>
+     <p>You may need to define multiple style rules for a single element. You can define these rules to combine
+         multiple properties and corresponding values into a single block as defined in the following example
+         &minus;</p>
+     <pre class="codebox">
+     h1 {
+        color: #36C;
+        font-weight: normal;
+        letter-spacing: .4em;
+        margin-bottom: 1em;
+        text-transform: lowercase;
+     }
+     </pre>
+     <p>Here all the property and value pairs are separated by a <b>semicolon (;)</b>. You can keep them in a
+         single line or multiple lines. For better readability, we keep them in separate lines.</p>
+     <p>For a while, don't bother about the properties mentioned in the above block. These properties will be
+         explained in the coming chapters and you can find complete detail about properties in CSS References
+         <!--<a href="/css/css_references.htm">CSS References</a>.</p>-->
+     <br><h2>Grouping Selectors</h2>
+     <p>You can apply a style to many selectors if you like. Just separate the selectors with a comma, as given
+         in the following example &minus;</p>
+     <pre class="codebox">
+     h1, h2, h3 {
+        color: #36C;
+        font-weight: normal;
+        letter-spacing: .4em;
+        margin-bottom: 1em;
+        text-transform: lowercase;
+     }
+     </pre>
+     <p>This define style rule will be applicable to h1, h2 and h3 element as well. The order of the list is
+         irrelevant. All the elements in the selector will have the corresponding declarations applied to them.
+     </p>
+     <p>You can combine the various <i>id</i> selectors together as shown below &minus;</p>
+     <pre class="codebox">
+     #content, #footer, #supplement {
+        position: absolute;
+        left: 510px;
+        width: 200px;
+     }
+     </pre>
+ 
+
+   </div> 
+   <input id="box3" name="box" type="radio"> 
+   <label for="box3"> CSS-Inclusion </label>
+   <div class="content">
+      <h3>CSS-INCLUSION </h3>
+      <p>There are four ways to associate styles with your HTML document. Most commonly used methods are inline
+         CSS and External CSS.</p><br>
+     <h2>Embedded CSS - The &lt;style&gt; Element</h2><br>
+     <p>You can put your CSS rules into an HTML document using the &lt;style&gt; element. This tag is placed
+         inside the &lt;head&gt;...&lt;/head&gt; tags. Rules defined using this syntax will be applied to all the
+         elements available in the document. Here is the generic syntax &minus;</p>
+     <pre class="codebox">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style type = "text/css" media = "all"&gt;
+  body {
+     background-color: linen;
+  }
+  h1 {
+     color: maroon;
+     margin-left: 40px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;   
+&lt;body&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br>
+     <h3>Attributes</h3>
+     <p>Attributes associated with &lt;style&gt; elements are &minus;</p>
+     <table class="table table-bordered">
+         <tr>
+             <th style="text-align:center;">Attribute</th>
+             <th style="text-align:center;">Value</th>
+             <th style="text-align:center;">Description</th>
+         </tr>
+         <tr>
+             <td class="ts">type</td>
+             <td class="ts">text/css</td>
+             <td>Specifies the style sheet language as a content-type (MIME type). This is required attribute.
+             </td>
+         </tr>
+         <tr>
+             <td class="ts">media</td>
+             <td>
+                 <p>screen</p>
+                 <p>tty</p>
+                 <p>tv</p>
+                 <p>projection</p>
+                 <p>handheld</p>
+                 <p>print</p>
+                 <p>braille</p>
+                 <p>aural</p>
+                 <p>all</p>
+             </td>
+             <td style="vertical-align:middle;">Specifies the device the document will be displayed on. Default
+                 value is <i>all</i>. This is an optional attribute.</td>
+         </tr>
+     </table><br>
+     <h2>Inline CSS - The <i>style</i> Attribute</h2>
+     <p>You can use <i>style</i> attribute of any HTML element to define style rules. These rules will be applied
+         to that element only. Here is the generic syntax &minus;</p>
+     <pre class="codebox">
+&lt;element style = "...style rules...."&gt;
+</pre>
+     <h3>Attributes</h3>
+     <table class="table table-bordered">
+         <tr>
+             <th style="text-align:center;">Attribute</th>
+             <th style="text-align:center;width:15%">Value</th>
+             <th style="text-align:center;">Description</th>
+         </tr>
+         <tr>
+             <td class="ts">style</td>
+             <td class="ts">style rules</td>
+             <td>The value of <i>style</i> attribute is a combination of style declarations separated by
+                 semicolon (;).</td>
+         </tr>
+     </table><br>
+     <h3>Example</h3>
+     <p>Following is the example of inline CSS based on the above syntax &minus;</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1 style = "color:#36C;"&gt; 
+  This is inline CSS 
+&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+     <h2>External CSS - The &lt;link&gt; Element</h2>
+     <p>The &lt;link&gt; element can be used to include an external stylesheet file in your HTML document.</p>
+     <p>An external style sheet is a separate text file with <b>.css</b> extension. You define all the Style
+         rules within this text file and then you can include this file in any HTML document using &lt;link&gt;
+         element.</p>
+     <p>Here is the generic syntax of including external CSS file &minus;</p>
+     <pre class="codebox">
+&lt;head&gt;
+&lt;link type = "text/css" href = "..." media = "..." /&gt;
+&lt;/head&gt;
+</pre><br>
+     <h3>Attributes</h3>
+     <p>Attributes associated with &lt;style&gt; elements are &minus;</p>
+     <table class="table table-bordered">
+         <tr>
+             <th style="text-align:center; width:15%;">Attribute</th>
+             <th style="text-align:center; width:20%;">Value</th>
+             <th style="text-align:center;">Description</th>
+         </tr>
+         <tr>
+             <td class="ts">type</td>
+             <td style="vertical-align:middle;">text css</td>
+             <td>Specifies the style sheet language as a content-type (MIME type). This attribute is required.
+             </td>
+         </tr>
+         <tr>
+             <td class="ts">href</td>
+             <td style="vertical-align:middle;">URL</td>
+             <td>Specifies the style sheet file having Style rules. This attribute is a required.</td>
+         </tr>
+         <tr>
+             <td class="ts">media</td>
+             <td>
+                 <p>screen</p>
+                 <p>tty</p>
+                 <p>tv</p>
+                 <p>projection</p>
+                 <p>handheld</p>
+                 <p>print</p>
+                 <p>braille</p>
+                 <p>aural</p>
+                 <p>all</p>
+             </td>
+             <td style="vertical-align:middle;">Specifies the device the document will be displayed on. Default
+                 value is <i>all</i>. This is optional attribute.</td>
+         </tr>
+     </table><br>
+     <h3>Example</h3>
+     <p>Consider a simple style sheet file with a name <i>mystyle.css</i> having the following rules &minus;</p>
+     <pre class="codebox">
+h1, h2, h3 {
+color: #36C;
+font-weight: normal;
+letter-spacing: .4em;
+margin-bottom: 1em;
+text-transform: lowercase;
+}
+</pre>
+     <p>Now you can include this file <i>mystyle.css</i> in any HTML document as follows &minus;</p>
+     <pre class="codebox">
+&lt;head&gt;
+&lt;link type = "text/css" href = "mystyle.css" media = " all" /&gt;
+&lt;/head&gt;
+</pre><br>
+     <h2>Imported CSS - @import Rule</h2>
+     <p>@import is used to import an external stylesheet in a manner similar to the &lt;link&gt; element. Here is
+         the generic syntax of @import rule.</p>
+     <pre class="codebox">
+&lt;head&gt;
+@import "URL";
+&lt;/head&gt;
+</pre>
+     <p>Here URL is the URL of the style sheet file having style rules. You can use another syntax as well
+         &minus;</p>
+     <pre class="codebox">
+&lt;head&gt;
+@import url("URL");
+&lt;/head&gt;
+</pre>
+     <h3>Example</h3>
+     <p>Following is the example showing you how to import a style sheet file into HTML document &minus;</p>
+     <pre class="codebox">
+&lt;head&gt;
+@import "mystyle.css";
+&lt;/head&gt;
+</pre><br>
+     <h2>CSS Rules Overriding</h2>
+     <p>We have discussed four ways to include style sheet rules in a an HTML document. Here is the rule to
+         override any Style Sheet Rule.</p>
+     <ul class="list">
+         <li>
+             <p>Any inline style sheet takes highest priority. So, it will override any rule defined in
+                 &lt;style&gt;...&lt;/style&gt; tags or rules defined in any external style sheet file.</p>
+         </li>
+         <li>
+             <p>Any rule defined in &lt;style&gt;...&lt;/style&gt; tags will override rules defined in any
+                 external style sheet file.</p>
+         </li>
+         <li>
+             <p>Any rule defined in external style sheet file takes lowest priority, and rules defined in this
+                 file will be applied only when above two rules are not applicable.</p>
+         </li>
+     </ul>
+     <h2>Handling old Browsers</h2>
+     <p>There are still many old browsers who do not support CSS. So, we should take care while writing our
+         Embedded CSS in an HTML document. The following snippet shows how you can use comment tags to hide CSS
+         from older browsers &minus;</p><br>
+     <pre class="codebox">
+&lt;style type = "text/css"&gt;
+&lt;!--
+body, td {
+  color: blue;
+}
+--&gt;
+&lt;/style&gt;
+</pre><br>
+     <h2>CSS Comments</h2>
+     <p>Many times, you may need to put additional comments in your style sheet blocks. So, it is very easy to
+         comment any part in style sheet. You can simple put your comments inside /*.....this is a comment in
+         style sheet.....*/.</p>
+     <p>You can use /* ....*/ to comment multi-line blocks in similar way you do in C and C++ programming
+         languages.</p>
+     <h3>Example</h3><br>
+             <pre class="codebox">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  p {
+     color: red;
+     /* This is a single-line comment */
+     text-align: center;
+  }
+  /* This is a multi-line comment */
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+ 
+
+   </div>
+   <input id="box4" name="box" type="radio"> 
+   <label for="box4"> CSS-Colors </label>
+   <div class="content">
+      <h3>CSS-Colors </h3>
+      <p>CSS uses color values to specify a color. Typically, these are used to set a color either for the
+         foreground of an element (i.e., its text) or else for the background of the element. They can also be
+         used to affect the color of borders and other decorative effects.</p>
+     <p>You can specify your color values in various formats. Following table lists all the possible formats
+         &minus;</p>
+     <table class="tate" style="text-align:center;">
+         <tr>
+             <th style="text-align:center;">Format</th>
+             <th style="text-align:center;">Syntax</th>
+             <th style="text-align:center;">Example</th>
+         </tr>
+         <tr>
+             <td>Hex Code</td>
+             <td>#RRGGBB</td>
+             <td>p{color:#FF0000;}</td>
+         </tr>
+         <tr>
+             <td>Short Hex Code</td>
+             <td>#RGB</td>
+             <td>p{color:#6A7;}</td>
+         </tr>
+         <tr>
+             <td>RGB %</td>
+             <td>rgb(rrr%,ggg%,bbb%)</td>
+             <td>p{color:rgb(50%,50%,50%);}</td>
+         </tr>
+         <tr>
+             <td>RGB Absolute</td>
+             <td>rgb(rrr,ggg,bbb)</td>
+             <td>p{color:rgb(0,0,255);}</td>
+         </tr>
+         <tr>
+             <td>keyword</td>
+             <td>aqua, black, etc.</td>
+             <td>p{color:teal;}</td>
+         </tr>
+     </table>
+     <p>These formats are explained in more detail in the following sections &minus;</p> <br>
+
+     <h2>CSS Colors - Hex Codes</h2>
+     <p>A hexadecimal is a 6 digit representation of a color. The first two digits(RR) represent a red value, the
+         next two are a green value(GG), and the last are the blue value(BB).</p>
+     <p>A hexadecimal value can be taken from any graphics software like Adobe Photoshop, Jasc Paintshop Pro, or
+         even using Advanced Paint Brush.</p>
+     <p>Each hexadecimal code will be preceded by a pound or hash sign '#'. Following are the examples to use
+         Hexadecimal notation.</p> <br>
+     <table class="table table-bordered">
+         <tr>
+             <th style="text-align:center;width:50%">Color</th>
+             <th style="text-align:center;width:50%">Color HEX</th>
+         </tr>
+         <tr>
+             <td bgcolor="#000000">&nbsp;</td>
+             <td style="text-align:center;">#000000</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ff0000">&nbsp;</td>
+             <td style="text-align:center;">#FF0000</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00ff00">&nbsp;</td>
+             <td style="text-align:center;">#00FF00</td>
+         </tr>
+         <tr>
+             <td bgcolor="#0000ff">&nbsp;</td>
+             <td style="text-align:center;">#0000FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ffff00">&nbsp;</td>
+             <td style="text-align:center;">#FFFF00</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00ffff">&nbsp;</td>
+             <td style="text-align:center;">#00FFFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ff00ff">&nbsp;</td>
+             <td style="text-align:center;">#FF00FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#c0c0c0">&nbsp;</td>
+             <td style="text-align:center;">#C0C0C0</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ffffff">&nbsp;</td>
+             <td style="text-align:center;">#FFFFFF</td>
+         </tr>
+     </table> <br>
+     <!--<p>To Become more comfortable - <a href="/cgi-bin/practice.cgi?file=css_color_hex" target="_blank">Do Online Practice</a></p>-->
+     <h2>CSS Colors - Short Hex Codes</h2>
+     <p>This is a shorter form of the six-digit notation. In this format, each digit is replicated to arrive at
+         an equivalent six-digit value. For example: #6A7 becomes #66AA77.</p>
+     <p>A hexadecimal value can be taken from any graphics software like Adobe Photoshop, Jasc Paintshop Pro, or
+         even using Advanced Paint Brush.</p>
+     <p>Each hexadecimal code will be preceded by a pound or hash sign '#'. Following are the examples to use
+         Hexadecimal notation.</p> <br>
+     <table class="table table-bordered">
+         <tr>
+             <th style="text-align:center;width:50%">Color</th>
+             <th style="text-align:center;width:50%">Color HEX</th>
+         </tr>
+         <tr>
+             <td bgcolor="#000">&nbsp;</td>
+             <td style="text-align:center;">#000</td>
+         </tr>
+         <tr>
+             <td bgcolor="#F00">&nbsp;</td>
+             <td style="text-align:center;">#F00</td>
+         </tr>
+         <tr>
+             <td bgcolor="#0F0">&nbsp;</td>
+             <td style="text-align:center;">#0F0</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00F">&nbsp;</td>
+             <td style="text-align:center;">#0FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#FF0">&nbsp;</td>
+             <td style="text-align:center;">#FF0</td>
+         </tr>
+         <tr>
+             <td bgcolor="#0FF">&nbsp;</td>
+             <td style="text-align:center;">#0FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#F0F">&nbsp;</td>
+             <td style="text-align:center;">#F0F</td>
+         </tr>
+         <tr>
+             <td bgcolor="#FFF">&nbsp;</td>
+             <td style="text-align:center;">#FFF</td>
+         </tr>
+     </table> <br>
+     <h2>CSS Colors - RGB Values</h2>
+     <p>This color value is specified using the <b>rgb( )</b> property. This property takes three values, one
+         each for red, green, and blue. The value can be an integer between 0 and 255 or a percentage.</p>
+     <p><b>NOTE</b> &minus; All the browsers does not support rgb() property of color so it is recommended not to
+         use it.</p> 
+     <p>Following is the example to show few colors using RGB values.</p> <br>
+     <table class="table table-bordered">
+         <tr>
+             <th style="text-align:center;width:50%">Color</th>
+             <th style="text-align:center;width:50%">Color RGB</th>
+         </tr>
+         <tr>
+             <td bgcolor="#000000">&nbsp;</td>
+             <td style="text-align:center;">rgb(0,0,0)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ff0000">&nbsp;</td>
+             <td style="text-align:center;">rgb(255,0,0)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00ff00">&nbsp;</td>
+             <td style="text-align:center;">rgb(0,255,0)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#0000ff">&nbsp;</td>
+             <td style="text-align:center;">rgb(0,0,255)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ffff00">&nbsp;</td>
+             <td style="text-align:center;">rgb(255,255,0)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00ffff">&nbsp;</td>
+             <td style="text-align:center;">rgb(0,255,255)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ff00ff">&nbsp;</td>
+             <td style="text-align:center;">rgb(255,0,255)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#c0c0c0">&nbsp;</td>
+             <td style="text-align:center;">rgb(192,192,192)</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ffffff">&nbsp;</td>
+             <td style="text-align:center;">rgb(255,255,255)</td>
+         </tr>
+     </table> <br>
+     <h2>Building Color Codes</h2>
+     <p>You can build millions of color codes using our Color Code Builder. Check our <b>HTML Color Code
+             Builder</b>. To use this tool, you would need a Java Enabled Browser.</p> <br>
+     <h2>Browser Safe Colors</h2>
+     <p>Here is the list of 216 colors which are supposed to be most safe and computer independent colors. These
+         colors vary from hexa code 000000 to FFFFFF. These colors are safe to use because they ensure that all
+         computers would display the colors correctly when running a 256 color palette &minus;</p> <br>
+     <table class="table table-bordered">
+         <tr>
+             <td style="color: white;" bgcolor="#000000">000000</td>
+             <td style="color: white;" bgcolor="#000033">000033</td>
+             <td style="color: white;" bgcolor="#000066">000066</td>
+             <td style="color: white;" bgcolor="#000099">000099</td>
+             <td style="color: white;" bgcolor="#0000cc">0000CC</td>
+             <td style="color: white;" bgcolor="#0000ff">0000FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#003300">003300</td>
+             <td style="color: white;" bgcolor="#003333">003333</td>
+             <td style="color: white;" bgcolor="#003366">003366</td>
+             <td style="color: white;" bgcolor="#003399">003399</td>
+             <td style="color: white;" bgcolor="#0033cc">0033CC</td>
+             <td style="color: white;" bgcolor="#0033ff">0033FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#006600">006600</td>
+             <td style="color: white;" bgcolor="#006633">006633</td>
+             <td style="color: white;" bgcolor="#006666">006666</td>
+             <td style="color: white;" bgcolor="#006699">006699</td>
+             <td style="color: white;" bgcolor="#0066cc">0066CC</td>
+             <td style="color: white;" bgcolor="#0066ff">0066FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#009900">009900</td>
+             <td bgcolor="#009933">009933</td>
+             <td bgcolor="#009966">009966</td>
+             <td bgcolor="#009999">009999</td>
+             <td bgcolor="#0099cc">0099CC</td>
+             <td bgcolor="#0099ff">0099FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00cc00">00CC00</td>
+             <td bgcolor="#00cc33">00CC33</td>
+             <td bgcolor="#00cc66">00CC66</td>
+             <td bgcolor="#00cc99">00CC99</td>
+             <td bgcolor="#00cccc">00CCCC</td>
+             <td bgcolor="#00ccff">00CCFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#00ff00">00FF00</td>
+             <td bgcolor="#00ff33">00FF33</td>
+             <td bgcolor="#00ff66">00FF66</td>
+             <td bgcolor="#00ff99">00FF99</td>
+             <td bgcolor="#00ffcc">00FFCC</td>
+             <td bgcolor="#00ffff">00FFFF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#330000">330000</td>
+             <td style="color: white;" bgcolor="#330033">330033</td>
+             <td style="color: white;" bgcolor="#330066">330066</td>
+             <td style="color: white;" bgcolor="#330099">330099</td>
+             <td style="color: white;" bgcolor="#3300cc">3300CC</td>
+             <td style="color: white;" bgcolor="#3300ff">3300FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#333300">333300</td>
+             <td style="color: white;" bgcolor="#333333">333333</td>
+             <td style="color: white;" bgcolor="#333366">333366</td>
+             <td style="color: white;" bgcolor="#333399">333399</td>
+             <td style="color: white;" bgcolor="#3333cc">3333CC</td>
+             <td style="color: white;" bgcolor="#3333ff">3333FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#336600">336600</td>
+             <td style="color: white;" bgcolor="#336633">336633</td>
+             <td style="color: white;" bgcolor="#336666">336666</td>
+             <td style="color: white;" bgcolor="#336699">336699</td>
+             <td style="color: white;" bgcolor="#3366cc">3366CC</td>
+             <td style="color: white;" bgcolor="#3366ff">3366FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#339900">339900</td>
+             <td bgcolor="#339933">339933</td>
+             <td bgcolor="#339966">339966</td>
+             <td bgcolor="#339999">339999</td>
+             <td bgcolor="#3399cc">3399CC</td>
+             <td bgcolor="#3399ff">3399FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#33cc00">33CC00</td>
+             <td bgcolor="#33cc33">33CC33</td>
+             <td bgcolor="#33cc66">33CC66</td>
+             <td bgcolor="#33cc99">33CC99</td>
+             <td bgcolor="#33cccc">33CCCC</td>
+             <td bgcolor="#33ccff">33CCFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#33ff00">33FF00</td>
+             <td bgcolor="#33ff33">33FF33</td>
+             <td bgcolor="#33ff66">33FF66</td>
+             <td bgcolor="#33ff99">33FF99</td>
+             <td bgcolor="#33ffcc">33FFCC</td>
+             <td bgcolor="#33ffff">33FFFF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#660000">660000</td>
+             <td style="color: white;" bgcolor="#660033">660033</td>
+             <td style="color: white;" bgcolor="#660066">660066</td>
+             <td style="color: white;" bgcolor="#660099">660099</td>
+             <td style="color: white;" bgcolor="#6600cc">6600CC</td>
+             <td style="color: white;" bgcolor="#6600ff">6600FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#663300">663300</td>
+             <td style="color: white;" bgcolor="#663333">663333</td>
+             <td style="color: white;" bgcolor="#663366">663366</td>
+             <td style="color: white;" bgcolor="#663399">663399</td>
+             <td style="color: white;" bgcolor="#6633cc">6633CC</td>
+             <td style="color: white;" bgcolor="#6633ff">6633FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#666600">666600</td>
+             <td style="color: white;" bgcolor="#666633">666633</td>
+             <td style="color: white;" bgcolor="#666666">666666</td>
+             <td style="color: white;" bgcolor="#666699">666699</td>
+             <td style="color: white;" bgcolor="#6666cc">6666CC</td>
+             <td style="color: white;" bgcolor="#6666ff">6666FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#669900">669900</td>
+             <td bgcolor="#669933">669933</td>
+             <td bgcolor="#669966">669966</td>
+             <td bgcolor="#669999">669999</td>
+             <td bgcolor="#6699cc">6699CC</td>
+             <td bgcolor="#6699ff">6699FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#66cc00">66CC00</td>
+             <td bgcolor="#66cc33">66CC33</td>
+             <td bgcolor="#66cc66">66CC66</td>
+             <td bgcolor="#66cc99">66CC99</td>
+             <td bgcolor="#66cccc">66CCCC</td>
+             <td bgcolor="#66ccff">66CCFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#66ff00">66FF00</td>
+             <td bgcolor="#66ff33">66FF33</td>
+             <td bgcolor="#66ff66">66FF66</td>
+             <td bgcolor="#66ff99">66FF99</td>
+             <td bgcolor="#66ffcc">66FFCC</td>
+             <td bgcolor="#66ffff">66FFFF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#990000">990000</td>
+             <td style="color: white;" bgcolor="#990033">990033</td>
+             <td style="color: white;" bgcolor="#990066">990066</td>
+             <td style="color: white;" bgcolor="#990099">990099</td>
+             <td style="color: white;" bgcolor="#9900cc">9900CC</td>
+             <td style="color: white;" bgcolor="#9900ff">9900FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#993300">993300</td>
+             <td style="color: white;" bgcolor="#993333">993333</td>
+             <td style="color: white;" bgcolor="#993366">993366</td>
+             <td style="color: white;" bgcolor="#993399">993399</td>
+             <td style="color: white;" bgcolor="#9933cc">9933CC</td>
+             <td style="color: white;" bgcolor="#9933ff">9933FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#996600">996600</td>
+             <td style="color: white;" bgcolor="#996633">996633</td>
+             <td style="color: white;" bgcolor="#996666">996666</td>
+             <td style="color: white;" bgcolor="#996699">996699</td>
+             <td style="color: white;" bgcolor="#9966cc">9966CC</td>
+             <td style="color: white;" bgcolor="#9966ff">9966FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#999900">999900</td>
+             <td bgcolor="#999933">999933</td>
+             <td bgcolor="#999966">999966</td>
+             <td bgcolor="#999999">999999</td>
+             <td bgcolor="#9999cc">9999CC</td>
+             <td bgcolor="#9999ff">9999FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#99cc00">99CC00</td>
+             <td bgcolor="#99cc33">99CC33</td>
+             <td bgcolor="#99cc66">99CC66</td>
+             <td bgcolor="#99cc99">99CC99</td>
+             <td bgcolor="#99cccc">99CCCC</td>
+             <td bgcolor="#99ccff">99CCFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#99ff00">99FF00</td>
+             <td bgcolor="#99ff33">99FF33</td>
+             <td bgcolor="#99ff66">99FF66</td>
+             <td bgcolor="#99ff99">99FF99</td>
+             <td bgcolor="#99ffcc">99FFCC</td>
+             <td bgcolor="#99ffff">99FFFF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#cc0000">CC0000</td>
+             <td style="color: white;" bgcolor="#cc0033">CC0033</td>
+             <td style="color: white;" bgcolor="#cc0066">CC0066</td>
+             <td style="color: white;" bgcolor="#cc0099">CC0099</td>
+             <td style="color: white;" bgcolor="#cc00cc">CC00CC</td>
+             <td style="color: white;" bgcolor="#cc00ff">CC00FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#cc3300">CC3300</td>
+             <td style="color: white;" bgcolor="#cc3333">CC3333</td>
+             <td style="color: white;" bgcolor="#cc3366">CC3366</td>
+             <td style="color: white;" bgcolor="#cc3399">CC3399</td>
+             <td style="color: white;" bgcolor="#cc33cc">CC33CC</td>
+             <td style="color: white;" bgcolor="#cc33ff">CC33FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#cc6600">CC6600</td>
+             <td style="color: white;" bgcolor="#cc6633">CC6633</td>
+             <td style="color: white;" bgcolor="#cc6666">CC6666</td>
+             <td style="color: white;" bgcolor="#cc6699">CC6699</td>
+             <td style="color: white;" bgcolor="#cc66cc">CC66CC</td>
+             <td style="color: white;" bgcolor="#cc66ff">CC66FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#cc9900">CC9900</td>
+             <td bgcolor="#cc9933">CC9933</td>
+             <td bgcolor="#cc9966">CC9966</td>
+             <td bgcolor="#cc9999">CC9999</td>
+             <td bgcolor="#cc99cc">CC99CC</td>
+             <td bgcolor="#cc99ff">CC99FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#cccc00">CCCC00</td>
+             <td bgcolor="#cccc33">CCCC33</td>
+             <td bgcolor="#cccc66">CCCC66</td>
+             <td bgcolor="#cccc99">CCCC99</td>
+             <td bgcolor="#cccccc">CCCCCC</td>
+             <td bgcolor="#ccccff">CCCCFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ccff00">CCFF00</td>
+             <td bgcolor="#ccff33">CCFF33</td>
+             <td bgcolor="#ccff66">CCFF66</td>
+             <td bgcolor="#ccff99">CCFF99</td>
+             <td bgcolor="#ccffcc">CCFFCC</td>
+             <td bgcolor="#ccffff">CCFFFF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#ff0000">FF0000</td>
+             <td style="color: white;" bgcolor="#ff0033">FF0033</td>
+             <td style="color: white;" bgcolor="#ff0066">FF0066</td>
+             <td style="color: white;" bgcolor="#ff0099">FF0099</td>
+             <td style="color: white;" bgcolor="#ff00cc">FF00CC</td>
+             <td style="color: white;" bgcolor="#ff00ff">FF00FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#ff3300">FF3300</td>
+             <td style="color: white;" bgcolor="#ff3333">FF3333</td>
+             <td style="color: white;" bgcolor="#ff3366">FF3366</td>
+             <td style="color: white;" bgcolor="#ff3399">FF3399</td>
+             <td style="color: white;" bgcolor="#ff33cc">FF33CC</td>
+             <td style="color: white;" bgcolor="#ff33ff">FF33FF</td>
+         </tr>
+         <tr>
+             <td style="color: white;" bgcolor="#ff6600">FF6600</td>
+             <td style="color: white;" bgcolor="#ff6633">FF6633</td>
+             <td style="color: white;" bgcolor="#ff6666">FF6666</td>
+             <td style="color: white;" bgcolor="#ff6699">FF6699</td>
+             <td style="color: white;" bgcolor="#ff66cc">FF66CC</td>
+             <td style="color: white;" bgcolor="#ff66ff">FF66FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ff9900">FF9900</td>
+             <td bgcolor="#ff9933">FF9933</td>
+             <td bgcolor="#ff9966">FF9966</td>
+             <td bgcolor="#ff9999">FF9999</td>
+             <td bgcolor="#ff99cc">FF99CC</td>
+             <td bgcolor="#ff99ff">FF99FF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ffcc00">FFCC00</td>
+             <td bgcolor="#ffcc33">FFCC33</td>
+             <td bgcolor="#ffcc66">FFCC66</td>
+             <td bgcolor="#ffcc99">FFCC99</td>
+             <td bgcolor="#ffcccc">FFCCCC</td>
+             <td bgcolor="#ffccff">FFCCFF</td>
+         </tr>
+         <tr>
+             <td bgcolor="#ffff00">FFFF00</td>
+             <td bgcolor="#ffff33">FFFF33</td>
+             <td bgcolor="#ffff66">FFFF66</td>
+             <td bgcolor="#ffff99">FFFF99</td>
+             <td bgcolor="#ffffcc">FFFFCC</td>
+             <td bgcolor="#ffffff">FFFFFF</td>
+         </tr>
+     </table>
+     <br>
+
+   </div>
+   <input id="box5" name="box" type="radio"> 
+   <label for="box5"> CSS-Background </label>
+   <div class="content">
+      <h3>CSS-BACKGROUNDS </h3>
+      <p>This chapter teaches you how to set backgrounds of various HTML elements. You can set the following
+         background properties of an element &minus;</p>
+     <ul class="list">
+         <li>
+             <p>The <b>background-color</b> property is used to set the background color of an element.</p>
+         </li>
+         <li>
+             <p>The <b>background-image</b> property is used to set the background image of an element.</p>
+         </li>
+         <li>
+             <p>The <b>background-repeat</b> property is used to control the repetition of an image in the
+                 background.</p>
+         </li>
+         <li>
+             <p>The <b>background-position</b> property is used to control the position of an image in the
+                 background.</p>
+         </li>
+         <li>
+             <p>The <b>background-attachment</b> property is used to control the scrolling of an image in the
+                 background.</p>
+         </li>
+         <li>
+             <p>The <b>background</b> property is used as a shorthand to specify a number of other background
+                 properties.</p>
+         </li>
+     </ul>
+     <h2>Set the Background Color</h2>
+     <p>Following is the example which demonstrates how to set the background color for an element.</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p <b>style = "background-color:yellow;"</b>&gt;
+  This text has a yellow background color.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+</pre><br>
+     <h2>Set the Background Image</h2>
+     <p>We can set the background image by calling local stored images as shown below &minus;</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body  {
+     background-image: url("/css/images/css.jpg");
+     background-color: #cccccc;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;html&gt;
+</pre><br>
+     h2>Repeat the Background Image</h2>
+     <p>The following example demonstrates how to repeat the background image if an image is small. You can use
+         <i>no-repeat</i> value for <i>background-repeat</i> property if you don't want to repeat an image, in
+         this case image will display only once.</p>
+     <p>By default <i>background-repeat</i> property will have <i>repeat</i> value.</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url("/css/images/css.jpg");
+     background-repeat: repeat;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Tutorials point&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br>
+     <p>The following example which demonstrates how to repeat the background image vertically.</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url("/css/images/css.jpg");
+     background-repeat: repeat-y;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Tutorials point&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br>
+   <p>The following example demonstrates how to repeat the background image horizontally.</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url("/css/images/css.jpg");
+     background-repeat: repeat-x;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Tutorials point&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br>
+     <h2>Set the Background Image Position</h2>
+     <p>The following example demonstrates how to set the background image position 100 pixels away from the left
+         side.</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url("/css/images/css.jpg");
+     background-position:100px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Tutorials point&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br>
+     <p>The following example demonstrates how to set the background image position 100 pixels away from the left
+         side and 200 pixels down from the top.</p>
+     <pre class="codebox">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url("/css/images/css.jpg");
+     background-position:100px 200px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;Tutorials point&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre> <br>
+     <h2>Set the Background Attachment</h2>
+     <p>Background attachment determines whether a background image is fixed or scrolls with the rest of the
+         page.</p>
+     <p>The following example demonstrates how to set the fixed background image.</p> <br>
+     <pre class="codebox">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url('/css/images/css.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre> <br>
+   <p>The following example demonstrates how to set the scrolling background image.</p>
+     <pre class="codebox">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  body {
+     background-image: url('/css/images/css.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-attachment:scroll;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;p&gt;The background-image is fixed. Try to scroll down the page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre> <br>
+    <h2>Shorthand Property</h2>
+     <p>You can use the <i>background</i> property to set all the background properties at once. For example
+         &minus;</p>
+     <pre class="codebox">
+
+&lt;<b>style = "background:url(/images/pattern1.gif) repeat fixed;"</b>&gt;</pre><br>
+This parapgraph has fixed repeated background image.
+&lt;/p&gt;
+   </div>
+
+     </div>
+   </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UNIT:2 </title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Unit:2</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Chapter.html">UNITS</a>
+      </nav>
+    <h2 align="center">UNIT:2</h2>
+    <h1 align="center">DOM & XML</h1>
+    <div class="wrapper">
+        <div class="box">
+		<input checked="checked" id="box1" name="box" type="radio"> 
+		<label for="box1">   DOM      </label>
+		<div class="content">
+			<h3>INTRODUCTION TO DOM</h3>
+			<p>The Document Object Model (DOM) is the data representation of the objects 
+                that comprise the structure and content of a document on the web. 
+                This guide will introduce the DOM, look at how the DOM represents
+                an HTML document in memory and how to use APIs to create web content and applications.
+             </p>
+<h3>What is the DOM?</h3>
+			<p><b>The Document Object Model (DOM)</b> is a programming interface for web documents. 
+                It represents the page so that programs can change the document structure, style, and content.
+                 The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+                 A web page is a document that can be either displayed in the browser window or as the HTML source.In both cases, 
+                 it is the same document but the Document Object Model (DOM) representation allows it to be manipulated.
+                  As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.
+                <br>
+                The way a document content is accessed and modified is called the <b>Document Object Model</b>, or DOM. 
+                The Objects are organized in a hierarchy. 
+                This hierarchical structure applies to the organization of objects in a Web document.
+                <br>
+   <li> Window object − Top of the hierarchy. It is the outmost element of the object hierarchy.</li>
+
+    <li>Document object − Each HTML document that gets loaded into a window becomes a document object. </li>
+    The document contains the contents of the page.
+
+    <li>Form object − Everything enclosed in the < form > ... < / form  >  tags sets the form object.</li>
+
+    <li> Form control elements − The form object contains all the elements defined for that object such as text fields, </li>
+    buttons, radio buttons, and checkboxes.
+    <br>
+    Here is a simple hierarchy of a few important objects −
+    <br>
+    <img src=" https://www.tutorialspoint.com/javascript/images/html-dom.jpg" alt="Flowers in Chania" class="center">
+<br>
+<br>
+    There are several DOMs in existence. 
+    <br>
+    The following sections explain each of these DOMs in detail and describe how you can use them to access and modify document content.
+
+   <li>The Legacy DOM − This is the model which was introduced in early versions of JavaScript language. 
+    It is well supported by all browsers, but allows access only to certain key portions of documents, such as forms, form elements, and images.</li>
+
+    <li>The W3C DOM − This document object model allows access and modification of all document content and is 
+    standardized by the World Wide Web Consortium (W3C). This model is supported by almost all the modern browsers.</li>
+
+    <li>The IE4 DOM − This document object model was introduced in Version 4 of Microsoft's Internet Explorer browser. 
+    IE 5 and later versions include support for most basic W3C DOM features.</li>
+
+<h3>DOM interfaces</h3>
+This guide is about the objects and the actual things you can use to manipulate the DOM hierarchy. 
+There are many points where understanding how these work can be confusing.
+ For example, the object representing the HTML form element gets its name property from the HTMLFormElement interface 
+ but its className property from the HTMLElement interface. In both cases, the property you want is in that form object.
+But the relationship between objects and the interfaces that they implement in the DOM can be confusing, 
+and so this section attempts to say a little something about the actual interfaces in the DOM specification and how they are made available.
+
+<h3>Interfaces and objects</h3>
+Many objects borrow from several different interfaces. 
+The table object, for example, implements a specialized HTMLTableElement interface, 
+which includes such methods as createCaption and insertRow. But since it's also an HTML element, table implements the Element interface 
+described in the DOM Element Reference chapter. And finally, since an HTML element is also, as far as the DOM is concerned, 
+a node in the tree of nodes that make up the object model for an HTML or XML page, 
+the table object also implements the more basic Node interface, from which Element derives.
+<br>
+When you get a reference to a table object, as in the following example, 
+you routinely use all three of these interfaces interchangeably on the object, 
+perhaps without knowing it.
+<br>
+<br>
+<img src="/images/ss.png" alt="">
+<h3>Core interfaces in the DOM</h3>
+This section lists some of the most commonly-used interfaces in the DOM. The idea is not to describe what these APIs do here but to give you an idea of the sorts of methods and properties you will see very often as you use the DOM. 
+These common APIs are used in the longer examples in the DOM Examples chapter at the end of this book.
+The document and window objects are the objects whose interfaces you generally use most often in DOM programming. 
+In simple terms, the window object represents something like the browser, and the document object is the root of the document itself. Element inherits from the generic Node interface, and together these two interfaces provide many of the methods and properties you use on individual elements. These elements may also have specific interfaces for 
+dealing with the kind of data those elements hold, as in the table object example in the previous section.   
+</p>
+                
+                         
+                                
+		</div>
+		<input id="box2" name="box" type="radio"> 
+		<label for="box2"> XML </label>
+		<div class="content">
+			<h3>INTRODUCTION TO XML </h3>
+
+                         <p>
+                            Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format
+                             that is both human-readable and machine-readable. The design goals of XML focus on simplicity, generality, 
+                             and usability across the Internet. It is a textual data format with strong support via Unicode for different human languages. 
+                             Although the design of XML focuses on documents, 
+                            the language is widely used for the representation of arbitrary data structures such as those used in web services.
+                            <br>
+                            <br>
+                           <b> What is XML?</b>
+                           
+   <li> XML stands for eXtensible Markup Language</li>
+   <li>XML is a markup language much like HTML</li>
+   <li> XML was designed to store and transport data</li>
+   <li> XML was designed to be self-descriptive</li>
+   <li> XML is a W3C Recommendation</li>
+
+                          <br>
+                            <br>
+                            <b>(i) XML Does Not DO Anything</b><br>
+                            <br>
+                            XML Does Not Use Predefined Tags<br>
+                            The XML language has no predefined tags.<br>
+                            <br>
+                            The tags in the example above (like < to > and < from > ) 
+                                are not defined in any XML standard. 
+                                These tags are "invented" by the author of the XML document.<br>
+                                <br>
+                            HTML works with predefined tags like  < p >, < h1 >, < table >, etc.<br>
+                            <br>
+                            With XML, the author must define both the tags and the document structure.
+                            <br>
+                            <br>
+                            <b>XML makes web development User Friendly :</b>
+                            <br>
+                            <br>Many computer systems contain data in incompatible formats.
+                             Exchanging data between incompatible systems or upgraded systems is a time-consuming task for web developers. 
+                             Large amounts of data must be converted, and incompatible data is often lost. XML stores data in plain text format. 
+                            This provides a software- and hardware-independent way of storing, transporting, and sharing data.<br>
+                            <br>
+                            <b>XML is Extensible:</b>
+                            XML applications will work as expected even if data is edited i.e. added or removed.<br>
+                            <b> Example :</b>The above note is edited into a newer version by adding date tag and hour tag , and by removing the heading tag.
+                            <br>
+                           <h3>XML | Elements</h3> 
+                           The XML elements are the basic building block of the XML document. It is used as a container to store text elements,
+                            attributes, media objects etc. Every XML documents contain at least 
+                           one element whose scopes are delimited by start and end tags or in case of empty elements it is delimited by an empty tag.
+                           <br>
+                           <b>Syntax:</b>
+                           <br>
+                           < element-name attributes > Contents...< / element-name  >
+                            <br>
+                            <b>element-name:</b> It is the name of element.
+                            <br>
+                            <b>attributes:</b> The attributes are used to define the XML element property and these attributes are separated by white space. 
+                            It associates the name with a value, which is a string of characters.
+<h3>Uses of XML</h3>
+XML has a variety of uses for Web, e-business, and portable applications.
+<br><br>
+The following are some of the many applications for which XML is useful:
+<br><br>
+    <b>Web publishing:</b> XML allows you to create interactive pages, allows the customer to customize those pages, and makes creating e-commerce applications more intuitive. 
+    With XML, you store the data once and then render that content for different viewers or devices based on style sheet processing using an Extensible Style Language (XSL)/XSL Transformation (XSLT) processor.<br>
+    <br>
+    <b>Web searching and automating Web tasks:</b>
+    
+     XML defines the type of information contained in a document, making it easier to return useful results when searching the Web:<br>
+     <br>
+    For example, using HTML to search for books authored by Tom Brown is likely to return instances of the term 'brown' outside of the context of author.
+     Using XML restricts the search to the correct context (for example, the information contained in the <author> tag) and returns only the information that you want.
+          By using XML, Web agents and robots (programs that automate Web searches or other tasks) are more efficient and produce more useful results.<br>
+          <br>
+          <b>General applications:</b> XML provides a standard method to access information, making it easier for applications and devices of all kinds to use, store, transmit, and display data.
+    <br>
+<br>
+    <b> e-business applications:</b> XML implementations make electronic data interchange (EDI) more accessible for information interchange, 
+    business-to-business transactions, and business-to-consumer transactions.<br><br>
+    <b> Metadata applications:</b> XML makes it easier to express metadata in a portable, reusable format.<br><br>
+        <b> Pervasive computing:</b> XML provides portable and structured information types for display on pervasive (wireless) computing devices such as personal digital assistants (PDAs), cellular phones, and others. For example, WML (Wireless Markup Language) 
+        and VoiceXML are currently evolving standards for describing visual and speech-driven wireless device interfaces.   
+                        </p>
+                        
+		</div>
+    </div>
+
+    
+</body>
+</html>

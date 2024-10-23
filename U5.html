@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UNIT:5 </title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>unit:5</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Chapter.html">UNITS</a>
+  </nav>
+   <h2 align="center">UNIT : 5</h2>
+   <h1 align="center"> INTRODUCTION TO SERVER-SIDE SCRIPTING LANGUAGE</h1>
+   <div class="wrapper">
+       <div class="box">
+     <input checked="checked" id="box1" name="box" type="radio"> 
+     <label for="box1">   INTRODUCTION     </label>
+     <div class="content">
+        <h3>Introduction to Server-Side Scripting language</h3>
+        <p>
+          Server-side scripting is a technique used in website designing to create
+          dynamic web pages based on various conditions when the user’s (client’s)
+          browser makes a request to the server The Web Server executes the
+          server-side scripting which produces the page to be sent to the browser.
+          The server executes server-side scripts to forward a page however it
+          doesn’t execute client-side scripts.
+        </p>
+        <br />
+        <p>
+          Server-side scripting is often used to connect with the databases that
+          locate on the web server. Also, it can approach the file system lying at
+          the web server. It is generally observed that response from a
+          server-side script is slower when compared to a client-side script as
+          the scripts are prepared on the seclude computer. PHP, Python, Ruby are
+          some common examples of server-side scripting.
+          <br>
+          <br>
+          <img src="/images/client-side-vs-server-side.jpg" alt="" class="center">
+        </p>
+
+      </div>
+
+      <input id="box2" name="box" type="radio"> 
+		<label for="box2"> ASP </label>
+		<div class="content">
+			<h3>ASP has two different meanings in the IT world: </h3>
+      <br />
+
+      <ol>
+        <li>Application Service Provider</li>
+        <br />
+        <p>
+          An Application Service Provider is a company or organization that
+          provides software applications to customers over the Internet. These
+          Internet-based applications are also known as "software as a service"
+          (SaaS) and are often made available on a subscription basis. This
+          means ASP clients often pay a monthly fee to use the software, rather
+          than purchasing a traditional software license. Some SaaS applications
+          can be accessed via a web browser, while others operate over a
+          proprietary secure port.
+        </p>
+        <br />
+        <li>Active Server Page.</li>
+        <br />
+        <p>
+          An Active Server Page, commonly called an "ASP page," is a webpage
+          that may contain scripts as well as standard HTML. The scripts are
+          processed by an ASP interpreter on the web server each time the page
+          is accessed by a visitor. Since the content of an ASP page can be
+          generated on-the-fly, ASP pages are commonly used for creating dynamic
+          websites.
+        </p>
+        <br />
+        <p>
+          ASP is similar to other scripting platforms, like PHP and JSP, but
+          supports multiple programming languages. While the default ASP
+          language is VBScript, ASP pages can include other programming
+          languages as well, such as C# and JavaScript. However, alternative
+          languages must be defined before the script code using the following
+          declaration:
+        </p>
+        <p><%@ Page Language="C#"%></p>
+        <br />
+        <p>
+          ASP pages are part of the ASP.NET web application framework developed
+          by Microsoft. Therefore, ASP pages are most often found on
+          Windows-based web servers that run Microsoft Internet Information
+          Services, or IIS. You can tell if you are accessing an ASP page in
+          your browser if the URL has an ".asp" or ".aspx" suffix.
+        </p>
+        <br />
+        <p>File extensions: .ASP, .ASPX</p>
+      </ol>
+    </div>
+
+    <input id="box3" name="box" type="radio"> 
+		<label for="box3"> JSP </label>
+		<div class="content">
+      <h3>Java Server Pages</h3>
+			<ul>
+        <li>It stands for Java Server Pages.</li>
+        <li>It is a server side technology.</li>
+        <li>It is used for creating web application.</li>
+        <li>It is used to create dynamic web content.</li>
+        <li>In this JSP tags are used to insert JAVA code into HTML pages.</li>
+        <li>It is an advanced version of Servlet Technology.</li>
+        <li>
+          It is a Web based technology helps us to create dynamic and platform
+          independent web pages.
+        </li>
+        <li>
+          JSP is first converted into servlet by JSP container before processing
+          the client’s request.
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h4>Features of JSP</h4>
+      <br />
+      <ul>
+        <li>
+          Coding in JSP is easy :- As it is just adding JAVA code to HTML/XML.
+        </li>
+        <li>
+          Reduction in the length of Code :- In JSP we use action tags, custom
+          tags etc.
+        </li>
+        <li>
+          Connection to Database is easier :-It is easier to connect website to
+          database and allows to read or write data easily to the database.
+        </li>
+        <li>
+          Make Interactive websites :- In this we can create dynamic web pages
+          which helps user to interact in real time environment.
+        </li>
+        <li>
+          Portable, Powerful, flexible and easy to maintain :- as these are
+          browser and server independent.
+        </li>
+        <li>
+          No Redeployment and No Re-Compilation :- It is dynamic, secure and
+          platform independent so no need to re-compilation.
+        </li>
+        <li>
+          Extension to Servlet :- as it has all features of servlets, implicit
+          objects and custom tags
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h4 >JSP Syntex</h4>
+      <br />
+      <p>Syntax available in JSP are following</p>
+      <br />
+      <ol>
+        <li>Declaration Tag :-It is used to declare variables.</li>
+        <p>Syntax:-</p>
+        <p>< %! Dec var %></p>
+        <p>Example:-</p>
+        <p>< %! int var=10; %></p>
+        <br />
+        <li>
+          Java Scriplets :- It allows us to add any number of JAVA code,
+          variables and expressions.
+        </li>
+        <p>Syntax:-</p>
+        <p>< % java code %></p>
+        <br />
+        <li>
+          JSP Expression :- It evaluates and convert the expression to a string.
+        </li>
+        <p>Syntax:-</p>
+        <p>< %= expression %></p>
+        <p>Example:-</p>
+        <p>< % num1 = num1+num2 %></p>
+        <br />
+        <li>
+          JAVA Comments :- It contains the text that is added for information
+          which has to be ignored.
+        </li>
+        <p>Syntax:-</p>
+        <p><% -- JSP Comments %></p>
+      </ol>
+    </div>
+    <input id="box4" name="box" type="radio"> 
+		<label for="box4"> PHP </label>
+		<div class="content">
+      <h3>PHP: Hypertext Preprocessor</h3>
+      <p>
+        The term PHP is an acronym for PHP: Hypertext Preprocessor. PHP is a
+        server-side scripting language designed specifically for web
+        development. It is open-source which means it is free to download and
+        use. It is very simple to learn and use. The files have the extension
+        “.php”.
+      </p>
+      <br />
+      <p>
+        Rasmus Lerdorf inspired the first version of PHP and participating in
+        the later versions. It is an interpreted language and it does not
+        require a compiler.
+      </p>
+      <br />
+      <ul>
+        <li>PHP code is executed in the server.</li>
+        <li>
+          It can be integrated with many databases such as Oracle, Microsoft SQL
+          Server, MySQL, PostgreSQL, Sybase, Informix.
+        </li>
+        <li>
+          It is powerful to hold a content management system like WordPress and
+          can be used to control user access.
+        </li>
+        <li>
+          It supports main protocols like HTTP Basic, HTTP Digest, IMAP, FTP,
+          and others.
+        </li>
+        <li>
+          Websites like www.facebook.com, www.yahoo.com are also built on PHP.
+        </li>
+        <li>
+          One of the main reasons behind this is that PHP can be easily embedded
+          in HTML files and HTML codes can also be written in a PHP file.
+        </li>
+        <li>
+          The thing that differentiates PHP from the client-side language like
+          HTML is, PHP codes are executed on the server whereas HTML codes are
+          directly rendered on the browser. PHP codes are first executed on the
+          server and then the result is returned to the browser.
+        </li>
+        <li>
+          The only information that the client or browser knows is the result
+          returned after executing the PHP script on the server and not the
+          actual PHP codes present in the PHP file. Also, PHP files can support
+          other client-side scripting languages like CSS and JavaScript.
+        </li>
+      </ul>
+      <br />
+      <h4>Syntax:</h4>
+      <br />
+      <p>< ?php</p>
+
+      <p>PHP code goes here</p>
+      <p>?></p>
+      <br />
+      <p>Example:</p>
+      <p>< body ></p>
+      <p>< ?php echo "Hello, World! This is PHP code";? ></p>
+      <p>< /body ></p>
+      <br />
+      <p>Output:</p>
+      <p>Hello, World! This is PHP code</p>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> UNIT:4 </title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Unit:4</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Chapter.html">UNITS</a>
+  </nav>
+   <h2 align="center">UNIT : 4</h2>
+   <h1 align="center"> INTRODUCTION TO CLIENT-SIDE SCRIPTING LANGUAGE</h1>
+   <div class="wrapper">
+       <div class="box">
+     <input checked="checked" id="box1" name="box" type="radio"> 
+     <label for="box1">   INTRODUCTION     </label>
+     <div class="content">
+        <h3>Introduction to Client-Side Scripting language</h3>
+        <p>
+            Client-side Scripting is utilized when the client’s (user’s) browser has
+            all the code and the page is modified on the basis of the client’s
+            (user’s) information. The Web Browser executes the client-side scripting
+            that locates within the user’s computer. Client-side scripts are also
+            known as the embedded script (as they are often embedded within an HTML
+            or XHTML document).
+          </p>
+          <br />
+          <p>
+            The browser gets the page sent by the server & executes the client-side
+            scripts. Client-side scripting can’t be utilized to join with the
+            databases on the web server. Client-side scripting cannot get the file
+            system which lies at the web server.
+          </p>
+          <br />
+          <p>
+            The records and settings which are local at the client’s (user’s)
+            computer can be approached employing Client-side scripting language.
+            It’s generally observed the response from a client-side script is faster
+            when compared to a server-side scripting language as the scripts are
+            prepared on the local computers. JavaScript, VB scripts are some common
+            examples of client-side scripting.
+          </p>
+   </div> 
+
+   <input id="box2" name="box" type="radio"> 
+   <label for="box2">JAVA-SCRIPT </label>
+   <div class="content">
+<h3>Java-Script</h3>
+<p>
+    JavaScript is a scripting or programming language that allows you to
+    implement complex features on web pages — every time a web page does
+    more than just sit there and display static information for you to look
+    at — displaying timely content updates, interactive maps, animated 2D/3D
+    graphics, scrolling video jukeboxes, etc.
+  </p>
+  <br />
+  <p>Advantages of JavaScript</p>
+  <br />
+  <ol>
+    <li>
+      Speed. Client-side JavaScript is very fast because it can be run
+      immediately within the client-side browser. Unless outside resources
+      are required, JavaScript is unhindered by network calls to a backend
+      server.
+    </li>
+
+    <li>
+      Simplicity. JavaScript is relatively simple to learn and implement.
+    </li>
+    <li>Popularity. JavaScript is used everywhere on the web.</li>
+    <li>
+      Interoperability. JavaScript plays nicely with other languages and can
+      be used in a huge variety of applications.
+    </li>
+    <li>
+      Server Load. Being client-side reduces the demand on the website
+      server.
+    </li>
+    <li>Gives the ability to create rich interfaces.</li>
+  </ol>
+  <br />
+  <p>Basic rules of JavaScript</p>
+  <br />
+  <p>The following rules apply to the basic syntax of JavaScript:</p>
+  <br />
+  <ul>
+    <li>JavaScript is case-sensitive.</li>
+    <li>Statements should end in a semicolon (;).</li>
+    <li>
+      Variables:
+      <ul>
+        <li>
+          Must be defined before being used. The variable name can contain A
+          – Z, a – z, underscore or digits and must start with a letter or
+          an underscore (“_”).
+        </li>
+        <li>
+          Assume the type of the data that is put into the variable. The
+          data type does not have to be explicitly defined
+        </li>
+        <li>
+          Are global variables when defined outside of a function, and are
+          available anywhere in the current script context. Variables
+          created within a function are local variables, and can be used
+          only within that function.
+        </li>
+      </ul>
+    </li>
+    <li>
+      Strings have to be enclosed in quotation marks, either a single or
+      double. For example: print(”Hello ” + ‘world ‘+ Country.name) produces
+      the following: Hello world US.
+    </li>
+    <li>
+      Special characters that are displayed literally must be preceded by a
+      backslash character (\). Quotes within a string can be entered
+      preceded by a backslash as well.
+    </li>
+    <li>
+      To increment a variable, such as a = a + 1, you can use a++. You can
+      decrement a variable in the same way, as in a--.
+    </li>
+    <li>
+      To enter comments in the script, use "//" to start a single line
+      comment or the combination of "/*" and "*/" to enclose a multi-line
+      comment.
+    </li>
+    <li>
+      Values that are not defined as a data type (string, number, Boolean)
+      may be defined as an object, such as Date, Array, Boolean, String, and
+      Number. As an example you could define: var ArrayList=new
+      Array(”test”, ” this”, ” list”);.
+    </li>
+    <li>
+      Dots in Service Manager field names must be replaced by an underscore
+      (_) in JavaScript. For example contact.name becomes contact_name.
+    </li>
+    <li>
+      Service Manager field names that are reserved words in JavaScript have
+      to be preceded by an underscore, such as “_class” for the “class”
+      field.
+    </li>
+  </ul>
+  <br />
+  <p>Event handling using JavaScript</p>
+  <br />
+  <p>
+    When an event occurs, you can create an event handler which is a piece
+    of code that will execute to respond to that event. An event handler is
+    also known as an event listener. It listens to the event and responds
+    accordingly to the event fires.
+  </p>
+  <br />
+  <p>
+    An event listener is a function with an explicit name if it is resuable
+    or an anonymous function in case it is used one time.
+  </p>
+  <br />
+  <p>
+    An event can be handled by one or multiple event handlers. If an event
+    has multiple event handlers, all the event handlers will be executed
+    when the event is fired.
+  </p>
+  <br />
+  <p>There are three ways to assign event handlers.</p>
+  <br />
+  <ol>
+    <li>
+      <p>HTML event handler attributes</p>
+      <br />
+      <p>
+        Event handlers typically have names that begin with on, for example,
+        the event handler for the click event is onclick.
+      </p>
+      <br />
+      <p>
+        To assign an event handler to an event associated with an HTML
+        element, you can use an HTML attribute with the name of the event
+        handler. For example, to execute some code when a button is clicked,
+        you use the following:
+      </p>
+      <br />
+      <p>
+        < input type="button" value="Save" onclick=" alert ('Clicked!')" >
+      </p>
+      <br />
+      <p>
+        In this case, when the button is clicked, the alert box is shown.
+      </p>
+    </li>
+    <br />
+    <li>
+      <p>DOM Level 0 event handlers</p>
+      <br />
+      <p>
+        Each element has event handler properties such as onclick. To assign
+        an event handler, you set the property to a function as shown in the
+        example:
+      </p>
+      <br />
+      <p>let btn = document . querySelector('# btn');</p>
+
+      <p>btn . onclick = function() {</p>
+      <p>alert('Clicked!');</p>
+      <p>};</p>
+      <br />
+      <p>
+        In this case, the anonymous function becomes the method of the
+        button element. Therefore, the this value is equivalent to the
+        element. And you can access the element’s properties inside the
+        event handler:
+      </p>
+      <br />
+      <p>let btn = document.querySelector('#btn');</p>
+
+      <p>btn.onclick = function() {</p>
+      <p>alert(this.id);</p>
+      <p>};</p>
+      <br />
+      <p>Output:</p>
+
+      <p>btn</p>
+      <br />
+      <p>
+        By using the this value inside the event handler, you can access the
+        element’s properties and methods.
+      </p>
+
+    </li>
+    <br>
+
+    <li>DOM Level 2 event handlers</li>
+    <br>
+<p>DOM Level 2 Event Handlers provide two main methods for dealing with the registering/deregistering event listeners:</p>
+<br>
+<ol>
+<li>
+addEventListener() – register an event handler
+
+</li>
+<br>
+<p>The addEventListener() method</p>
+<br>
+<p>The addEventListener() method accepts three arguments: an event name, an event handler function, and a Boolean value that instructs the method to call the event handler during the capture phase (true) or during the bubble phase (false). For example:</p>
+<br>
+
+<p>let btn = document.querySelector('#btn');</p>
+<p>btn.addEventListener('click',function(event) {</p>
+<p> alert(event.type); // click</p>
+<p>});</p>
+
+<br>
+<li>
+removeEventListener() – remove an event handler
+</li>
+<br>
+<p>The removeEventListener() method</p>
+<br>
+<p>The removeEventListener() removes an event listener that was added via the addEventListener(). However, you need to pass the same arguments as were passed to the addEventListener(). For example:</p>
+<br>
+<p>let btn = document.querySelector('#btn');</p>
+
+
+<p>let showAlert = function() {</p>
+<p>alert('Clicked!');</p>
+<p>};</p>
+<p>btn.addEventListener('click', showAlert);</p>
+
+
+<p>btn.removeEventListener('click', showAlert);
+</p>
+</ol>
+<br>
+
+
+    </li>
+
+
+  </ol>
+</div>
+<input id="box3" name="box" type="radio"> 
+   <label for="box3">AJAX & VB SCRIPT </label>
+   <div class="content">
+<u><h2>Ajax and VB Script</h2></u>
+<h4 >What is AJAX?</h4>
+      <p>AJAX = Asynchronous JavaScript And XML.</p>
+      <br />
+      <p>AJAX is not a programming language.</p>
+      <br />
+      <p>AJAX just uses a combination of:</p>
+      <br />
+      <ul>
+        <li>
+          A browser built-in XMLHttpRequest object (to request data from a web
+          server)
+        </li>
+
+        <li>JavaScript and HTML DOM (to display or use the data)</li>
+      </ul>
+      <br />
+      <p>
+        AJAX allows web pages to be updated asynchronously by exchanging data
+        with a web server behind the scenes. This means that it is possible to
+        update parts of a web page, without reloading the whole page.
+      </p>
+      <br />
+      <h4 >How AJAX Works</h4>
+      <br />
+      <center>
+        <img src="images/ajax.gif" alt="" />
+      </center>
+      <br />
+      <ol>
+        <br />
+        <li>
+          An event occurs in a web page (the page is loaded, a button is
+          clicked)
+        </li>
+        <br />
+        <li>An XMLHttpRequest object is created by JavaScript</li>
+        <br />
+        <li>The XMLHttpRequest object sends a request to a web server</li>
+        <br />
+        <li>The server processes the request</li>
+        <br />
+        <li>The server sends a response back to the web page</li>
+        <br />
+        <li>The response is read by JavaScript</li>
+        <br />
+        <li>Proper action (like page update) is performed by JavaScript</li>
+      </ol>
+      <br />
+      <h3 >VB Script</h3>
+      <br />
+      <p>
+        VBScript ("Microsoft Visual Basic Scripting Edition") is an Active
+        Scripting language developed by Microsoft that is modeled on Visual
+        Basic. It allows Microsoft Windows system administrators to generate
+        powerful tools for managing computers with error handling, subroutines,
+        and other advanced programming constructs. It can give the user complete
+        control over many aspects of their computing environment.
+      </p>
+      <br />
+      <p>
+        VBScript uses the Component Object Model to access elements of the
+        environment within which it is running; for example, the
+        FileSystemObject (FSO) is used to create, read, update and delete files.
+        VBScript has been installed by default in every desktop release of
+        Microsoft Windows since Windows 98;in Windows Server since Windows NT
+        4.0 Option Pack; and optionally with Windows CE (depending on the device
+        it is installed on).
+      </p>
+      <br />
+      <p>
+        A VBScript script must be executed within a host environment, of which
+        there are several provided with Microsoft Windows, including: Windows
+        Script Host (WSH), Internet Explorer (IE), and Internet Information
+        Services (IIS). Additionally, the VBScript hosting environment is
+        embeddable in other programs, through technologies such as the Microsoft
+        Script Control (msscript.ocx).
+      </p>
+    </div>
+
+   
+</body>
+</html>
